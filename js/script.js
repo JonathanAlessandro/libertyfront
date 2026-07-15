@@ -1,4 +1,4 @@
-const API_URL = '/api/clientes';
+const API_URL = 'http://twlm4h21plszdybor5mfvyif.200.234.212.102.sslip.io/api/clientes';
 
 function toggleDocumento() {
   const tipo = document.querySelector('input[name="tipoDocumento"]:checked').value;
