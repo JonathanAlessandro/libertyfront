@@ -22,9 +22,21 @@ function toggleDocumento() {
   }
 }
 
+function togglePlano() {
+  const semPlano = document.getElementById('semPlano').checked;
+  const planoInput = document.getElementById('plano_atual');
+
+  planoInput.disabled = semPlano;
+
+  if (semPlano) {
+    planoInput.value = '';
+  }
+}
+
 function validarFormulario() {
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
+  const semPlano = document.getElementById('semPlano').checked;
   const plano_atual = document.getElementById('plano_atual').value.trim();
   const idades = document.getElementById('idades').value.trim();
   const tipoDocumento = document.querySelector('input[name="tipoDocumento"]:checked').value;
@@ -39,7 +51,7 @@ function validarFormulario() {
     mostrarMensagem('Email é obrigatório', 'error');
     return false;
   }
-  if (!plano_atual) {
+  if (!semPlano && !plano_atual) {
     mostrarMensagem('Plano atual é obrigatório', 'error');
     return false;
   }
@@ -82,11 +94,12 @@ async function handleSubmit(e) {
   submitBtn.textContent = 'Cadastrando...';
 
   const tipoDocumento = document.querySelector('input[name="tipoDocumento"]:checked').value;
+  const semPlano = document.getElementById('semPlano').checked;
   const data = {
     nome: document.getElementById('nome').value.trim(),
     email: document.getElementById('email').value.trim(),
     telefone: document.getElementById('telefone').value.trim() || null,
-    plano_atual: document.getElementById('plano_atual').value.trim(),
+    plano_atual: semPlano ? 'não possuo plano' : document.getElementById('plano_atual').value.trim(),
     idades: parseIdades(document.getElementById('idades').value.trim()),
     aceitaEmails: document.getElementById('aceitaEmails').checked,
   };
@@ -112,6 +125,7 @@ async function handleSubmit(e) {
       mostrarMensagem('Cliente cadastrado com sucesso!', 'success');
       document.getElementById('cadastroForm').reset();
       toggleDocumento();
+      togglePlano();
     } else {
       mostrarMensagem(result.message || 'Erro ao cadastrar cliente', 'error');
     }

@@ -54,6 +54,13 @@
         <input type="text" id="plano_atual" name="plano_atual" required>
       </div>
 
+      <div class="form-group checkbox-group">
+        <label>
+          <input type="checkbox" id="semPlano" name="semPlano" onchange="togglePlano()">
+          Não possuo plano
+        </label>
+      </div>
+
       <div class="form-group">
         <label for="idades">Idades dos Participantes (separadas por vírgula):</label>
         <input type="text" id="idades" name="idades" placeholder="10, 20, 30" required>
