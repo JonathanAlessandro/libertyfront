@@ -33,6 +33,56 @@ function togglePlano() {
   }
 }
 
+function formatarDocumento(input) {
+  const tipo = input.id === 'cpf' ? 'cpf' : 'cnpj';
+  let value = input.value.replace(/\D/g, '');
+
+  if (tipo === 'cpf') {
+    value = value.slice(0, 11);
+
+    if (value.length <= 3) {
+      input.value = value;
+      return;
+    }
+    if (value.length <= 6) {
+      input.value = `${value.slice(0, 3)}.${value.slice(3)}`;
+      return;
+    }
+    if (value.length <= 9) {
+      input.value = `${value.slice(0, 3)}.${value.slice(3, 6)}.${value.slice(6)}`;
+      return;
+    }
+
+    input.value = `${value.slice(0, 3)}.${value.slice(3, 6)}.${value.slice(6, 9)}-${value.slice(9)}`;
+    return;
+  }
+
+  value = value.slice(0, 14);
+
+  if (value.length <= 2) {
+    input.value = value;
+    return;
+  }
+  if (value.length <= 5) {
+    input.value = `${value.slice(0, 2)}.${value.slice(2)}`;
+    return;
+  }
+  if (value.length <= 8) {
+    input.value = `${value.slice(0, 2)}.${value.slice(2, 5)}.${value.slice(5)}`;
+    return;
+  }
+  if (value.length <= 12) {
+    input.value = `${value.slice(0, 2)}.${value.slice(2, 5)}.${value.slice(5, 8)}/${value.slice(8)}`;
+    return;
+  }
+
+  input.value = `${value.slice(0, 2)}.${value.slice(2, 5)}.${value.slice(5, 8)}/${value.slice(8, 12)}-${value.slice(12)}`;
+}
+
+function getDocumentoSemMascara(inputId) {
+  return document.getElementById(inputId).value.replace(/\D/g, '');
+}
+
 function validarFormulario() {
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
@@ -40,8 +90,8 @@ function validarFormulario() {
   const plano_atual = document.getElementById('plano_atual').value.trim();
   const idades = document.getElementById('idades').value.trim();
   const tipoDocumento = document.querySelector('input[name="tipoDocumento"]:checked').value;
-  const cpf = document.getElementById('cpf').value.trim();
-  const cnpj = document.getElementById('cnpj').value.trim();
+  const cpf = getDocumentoSemMascara('cpf').trim();
+  const cnpj = getDocumentoSemMascara('cnpj').trim();
 
   if (!nome) {
     mostrarMensagem('Nome é obrigatório', 'error');
@@ -105,9 +155,9 @@ async function handleSubmit(e) {
   };
 
   if (tipoDocumento === 'cpf') {
-    data.cpf = document.getElementById('cpf').value.trim();
+    data.cpf = getDocumentoSemMascara('cpf');
   } else {
-    data.cnpj = document.getElementById('cnpj').value.trim();
+    data.cnpj = getDocumentoSemMascara('cnpj');
   }
 
   try {
@@ -137,5 +187,13 @@ async function handleSubmit(e) {
     submitBtn.textContent = 'Cadastrar';
   }
 }
+
+document.getElementById('cpf').addEventListener('input', function () {
+  formatarDocumento(this);
+});
+
+document.getElementById('cnpj').addEventListener('input', function () {
+  formatarDocumento(this);
+});
 
 document.getElementById('cadastroForm').addEventListener('submit', handleSubmit);
