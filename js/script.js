@@ -172,12 +172,12 @@ async function handleSubmit(e) {
     const result = await response.json();
 
     if (response.ok) {
-      mostrarMensagem('Cliente cadastrado com sucesso!', 'success');
+      mostrarMensagem('Solicitação enviada com sucesso!', 'success');
       document.getElementById('cadastroForm').reset();
       toggleDocumento();
       togglePlano();
     } else {
-      mostrarMensagem(result.message || 'Erro ao cadastrar cliente', 'error');
+      mostrarMensagem(result.message || 'Erro ao enviar solicitação', 'error');
     }
   } catch (error) {
     console.error(error);
