@@ -1,24 +1,14 @@
 const API_URL = 'http://twlm4h21plszdybor5mfvyif.200.234.212.102.sslip.io/api/clientes';
 
-function toggleDocumento() {
-  const tipo = document.querySelector('input[name="tipoDocumento"]:checked').value;
-  const cpfGroup = document.getElementById('cpfGroup');
-  const cnpjGroup = document.getElementById('cnpjGroup');
-  const cpfInput = document.getElementById('cpf');
+function toggleCnpj() {
+  const noCnpj = document.getElementById('noCnpj').checked;
   const cnpjInput = document.getElementById('cnpj');
 
-  if (tipo === 'cpf') {
-    cpfGroup.style.display = 'block';
-    cnpjGroup.style.display = 'none';
+  cnpjInput.disabled = noCnpj;
+  cnpjInput.required = !noCnpj;
+
+  if (noCnpj) {
     cnpjInput.value = '';
-    cpfInput.required = true;
-    cnpjInput.required = false;
-  } else {
-    cpfGroup.style.display = 'none';
-    cnpjGroup.style.display = 'block';
-    cpfInput.value = '';
-    cpfInput.required = false;
-    cnpjInput.required = true;
   }
 }
 
@@ -86,12 +76,13 @@ function getDocumentoSemMascara(inputId) {
 function validarFormulario() {
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
+  const telefone = document.getElementById('telefone').value.trim();
+  const noCnpj = document.getElementById('noCnpj').checked;
+  const cnpj = getDocumentoSemMascara('cnpj').trim();
+  const hospital = document.getElementById('hospital').value.trim();
   const semPlano = document.getElementById('semPlano').checked;
   const plano_atual = document.getElementById('plano_atual').value.trim();
   const idades = document.getElementById('idades').value.trim();
-  const tipoDocumento = document.querySelector('input[name="tipoDocumento"]:checked').value;
-  const cpf = getDocumentoSemMascara('cpf').trim();
-  const cnpj = getDocumentoSemMascara('cnpj').trim();
 
   if (!nome) {
     mostrarMensagem('Nome é obrigatório', 'error');
@@ -99,6 +90,18 @@ function validarFormulario() {
   }
   if (!email) {
     mostrarMensagem('Email é obrigatório', 'error');
+    return false;
+  }
+  if (!telefone) {
+    mostrarMensagem('Telefone é obrigatório', 'error');
+    return false;
+  }
+  if (!noCnpj && !cnpj) {
+    mostrarMensagem('CNPJ é obrigatório', 'error');
+    return false;
+  }
+  if (!hospital) {
+    mostrarMensagem('Hospital de preferência é obrigatório', 'error');
     return false;
   }
   if (!semPlano && !plano_atual) {
@@ -109,14 +112,6 @@ function validarFormulario() {
     mostrarMensagem('Idades são obrigatórias', 'error');
     return false;
   }
-  if (tipoDocumento === 'cpf' && !cpf) {
-    mostrarMensagem('CPF é obrigatório', 'error');
-    return false;
-  }
-  if (tipoDocumento === 'cnpj' && !cnpj) {
-    mostrarMensagem('CNPJ é obrigatório', 'error');
-    return false;
-  }
 
   return true;
 }
@@ -124,7 +119,7 @@ function validarFormulario() {
 function mostrarMensagem(texto, tipo) {
   const messageDiv = document.getElementById('message');
   messageDiv.textContent = texto;
-  messageDiv.className = `message ${tipo}`;
+  messageDiv.className = `form-message ${tipo}`;
   messageDiv.style.display = 'block';
 }
 
@@ -143,22 +138,19 @@ async function handleSubmit(e) {
   submitBtn.disabled = true;
   submitBtn.textContent = 'Cadastrando...';
 
-  const tipoDocumento = document.querySelector('input[name="tipoDocumento"]:checked').value;
+  const noCnpj = document.getElementById('noCnpj').checked;
   const semPlano = document.getElementById('semPlano').checked;
   const data = {
     nome: document.getElementById('nome').value.trim(),
     email: document.getElementById('email').value.trim(),
     telefone: document.getElementById('telefone').value.trim() || null,
+    cnpj: noCnpj ? null : getDocumentoSemMascara('cnpj'),
+    noCnpj,
+    hospital: document.getElementById('hospital').value.trim(),
     plano_atual: semPlano ? 'não possuo plano' : document.getElementById('plano_atual').value.trim(),
     idades: parseIdades(document.getElementById('idades').value.trim()),
     aceitaEmails: document.getElementById('aceitaEmails').checked,
   };
-
-  if (tipoDocumento === 'cpf') {
-    data.cpf = getDocumentoSemMascara('cpf');
-  } else {
-    data.cnpj = getDocumentoSemMascara('cnpj');
-  }
 
   try {
     const response = await fetch(API_URL, {
@@ -174,7 +166,7 @@ async function handleSubmit(e) {
     if (response.ok) {
       mostrarMensagem('Solicitação enviada com sucesso!', 'success');
       document.getElementById('cadastroForm').reset();
-      toggleDocumento();
+      toggleCnpj();
       togglePlano();
     } else {
       mostrarMensagem(result.message || 'Erro ao enviar solicitação', 'error');
@@ -188,12 +180,10 @@ async function handleSubmit(e) {
   }
 }
 
-document.getElementById('cpf').addEventListener('input', function () {
-  formatarDocumento(this);
-});
-
 document.getElementById('cnpj').addEventListener('input', function () {
   formatarDocumento(this);
 });
+
+document.getElementById('noCnpj').addEventListener('change', toggleCnpj);
 
 document.getElementById('cadastroForm').addEventListener('submit', handleSubmit);

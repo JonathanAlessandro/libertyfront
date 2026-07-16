@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Liberty Saúde, consultoria em planos de saúde.">
+  <title>Contato | Liberty Saúde</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main>
+  <section class="page-hero">
+    <div class="container narrow">
+      <span class="eyebrow">Contato</span>
+      <h1>Como podemos te ajudar?</h1>
+      <p>Mande sua dúvida, mensagem ou solicitação de cotação.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container narrow">
+      <div class="notice">Este site está em modo estático. Configure <code>leadEndpoint</code> em <code>../js/config.js</code> para enviar o formulário ao seu backend.</div>
+      <br>
+      <form class="lead-form">
+        <input type="hidden" name="produto" value="Contato pelo site">
+        <div class="form-grid">
+          <label>Nome<input name="nome" required></label>
+          <label>E-mail<input name="email" type="email" required></label>
+          <label>Telefone<input name="telefone" required></label>
+          <label>Interesse<select name="plano">
+            <option value="">Selecione</option>
+            <option>Alice</option>
+            <option>Amil</option>
+            <option>Bradesco Saúde</option>
+            <option>HapVida</option>
+            <option>Porto Seguro Saúde</option>
+            <option>SulAmérica</option>
+          </select></label>
+        </div>
+        <label>Mensagem<textarea name="observacao" rows="5"></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <p class="form-message"></p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<a class="whatsapp-float" data-whatsapp href="#" aria-label="WhatsApp">☎</a>
+<div class="cookie" hidden>
+  <p>A Liberty Saúde usa os dados dos formulários para atendimento, conforme a <a href="politica-de-privacidade.html"><u>Política de Privacidade</u></a>.</p>
+  <button class="btn btn-primary">Prosseguir</button>
+</div>
+<script src="../js/site-ui.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Liberty Saúde, consultoria em planos de saúde.">
+  <title>Porto Seguro Saúde | Liberty Saúde</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header id="site-header" class="site-header"></header>
+<main>
+  <section class="plan-hero">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Plano de saúde</span>
+        <h1>Porto Seguro Saúde</h1>
+        <p>Benefícios, telemedicina e atendimento nacional para empresas.</p>
+        <a class="btn btn-light" href="#cotacao">Solicitar cotação</a>
+      </div>
+      <div class="visual">
+        <div class="orb">Porto Seguro Saúde</div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Benefícios</span>
+        <h2>Conheça os principais diferenciais</h2>
+        <ul class="check-list">
+          <li>Programa de benefícios</li>
+          <li>Telemedicina 24h</li>
+          <li>Urgência e emergência 24h</li>
+          <li>Planos empresariais</li>
+        </ul>
+      </div>
+      <div id="cotacao" class="card">
+        <h2>Peça sua cotação</h2>
+        <form class="lead-form">
+          <input type="hidden" name="produto" value="Porto Seguro Saúde">
+          <div class="form-grid">
+            <label>Nome<input name="nome" required></label>
+            <label>E-mail<input name="email" type="email" required></label>
+            <label>Telefone<input name="telefone" required></label>
+            <label>Plano<select name="plano">
+              <option value="">Selecione</option>
+              <option>Linha Pró</option>
+              <option>Linha P</option>
+              <option>Linha Tradicional</option>
+              <option>Linha Porto Bairro</option>
+            </select></label>
+          </div>
+          <label>Observações<textarea name="observacao" rows="4"></textarea></label>
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <p class="form-message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<a class="whatsapp-float" data-whatsapp href="#" aria-label="WhatsApp">☎</a>
+<div class="cookie" hidden>
+  <p>A Liberty Saúde usa os dados dos formulários para atendimento, conforme a <a href="politica-de-privacidade.html"><u>Política de Privacidade</u></a>.</p>
+  <button class="btn btn-primary">Prosseguir</button>
+</div>
+<script src="../js/site-ui.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
