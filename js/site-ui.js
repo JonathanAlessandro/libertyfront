@@ -5,7 +5,7 @@
   const navItems = [
     { label: 'Início', href: 'index.html' },
     { label: 'Quem somos', href: 'pages/quem-somos.html' },
-    // { label: 'Contato', href: 'pages/contato.html' }
+    //{ label: 'Contato', href: 'pages/contato.html' }
   ];
 
   const planItems = [
@@ -55,7 +55,6 @@
               ${planItems.map(item => buildLink(item)).join('')}
             </div>
           </div>
-          ${buildLink(navItems[2])}
           <a class="btn btn-primary" href="${resolve('pages/formulario.html')}">Cotação</a>
         </nav>
       </div>
