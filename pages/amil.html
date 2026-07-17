@@ -37,28 +37,13 @@
       </div>
       <div id="cotacao" class="card">
         <h2>Peça sua cotação</h2>
-        <form class="lead-form">
-          <input type="hidden" name="produto" value="Amil">
-          <div class="form-grid">
-            <label>Nome<input name="nome" required></label>
-            <label>E-mail<input name="email" type="email" required></label>
-            <label>Telefone<input name="telefone" required></label>
-            <label>Plano<select name="plano">
-              <option value="">Selecione</option>
-              <option>Linha Amil Tradicional</option>
-              <option>Amil One Premium</option>
-            </select></label>
-          </div>
-          <label>Observações<textarea name="observacao" rows="4"></textarea></label>
-          <button class="btn btn-primary" type="submit">Enviar</button>
-          <p class="form-message"></p>
-        </form>
+        <div id="formulario-amil"></div>
       </div>
     </div>
   </section>
 </main>
 <footer id="site-footer" class="site-footer"></footer>
-<a class="whatsapp-float" data-whatsapp href="#" aria-label="WhatsApp">☎</a>
+<a class="whatsapp-float" data-whatsapp href="#" aria-label="WhatsApp"></a>
 <div class="cookie" hidden>
   <p>A Liberty Saúde usa os dados dos formulários para atendimento, conforme a <a href="politica-de-privacidade.html"><u>Política de Privacidade</u></a>.</p>
   <button class="btn btn-primary">Prosseguir</button>
@@ -66,5 +51,11 @@
 <script src="../js/site-ui.js"></script>
 <script src="../js/config.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/formulario.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    createQuotationForm('formulario-amil', 'Amil');
+  });
+</script>
 </body>
 </html>

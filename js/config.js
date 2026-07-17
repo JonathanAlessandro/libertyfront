@@ -1,5 +1,5 @@
 window.LIBERTY_CONFIG = {
-  whatsapp: '551198915-2642',
+  whatsapp: '5511989152642',
   leadEndpoint: '',
   requestTimeoutMs: 15000
 };

@@ -13,79 +13,18 @@
   <section class="page-hero">
     <div class="container narrow">
       <span class="eyebrow">Cotação</span>
-      <h1>Cadastro de Cliente</h1>
+      <h1>Solicite seu Orçamento</h1>
       <p>Preencha o formulário para receber uma cotação personalizada.</p>
     </div>
   </section>
   <section class="section">
     <div class="container narrow">
-      <div style="background: white; border: 1px solid #e5edf2; border-radius: 24px; padding: 30px; box-shadow: 0 8px 28px rgba(20,53,88,.06);">
-        <form id="cadastroForm">
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-          </div>
-
-          <div class="form-group">
-            <label for="cnpj">CNPJ:</label>
-            <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required>
-          </div>
-
-          <div class="form-group checkbox-group">
-            <label>
-              <input type="checkbox" id="noCnpj" name="noCnpj" onchange="toggleCnpj()">
-              Não possuo CNPJ
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label for="hospital">Hospital de preferência:</label>
-            <input type="text" id="hospital" name="hospital" required>
-          </div>
-
-          <div class="form-group">
-            <label for="plano_atual">Plano Atual:</label>
-            <input type="text" id="plano_atual" name="plano_atual" required>
-          </div>
-
-          <div class="form-group checkbox-group">
-            <label>
-              <input type="checkbox" id="semPlano" name="semPlano" onchange="togglePlano()">
-              Não possuo plano
-            </label>
-          </div>
-
-          <div class="form-group">
-            <label for="idades">Idades dos Participantes (separadas por vírgula):</label>
-            <input type="text" id="idades" name="idades" placeholder="10, 20, 30" required>
-          </div>
-
-          <div class="form-group checkbox-group">
-            <label>
-              <input type="checkbox" id="aceitaEmails" name="aceitaEmails">
-              Aceita receber e-mails
-            </label>
-          </div>
-
-          <button type="submit" id="submitBtn" class="btn btn-primary">Cadastrar</button>
-        </form>
-      </div>
-      <div id="message" class="form-message" style="display: none;"></div>
+      <div id="formulario-container"></div>
     </div>
   </section>
 </main>
 <footer id="site-footer" class="site-footer"></footer>
-<a class="whatsapp-float" data-whatsapp href="#" aria-label="WhatsApp">☎</a>
+<a class="whatsapp-float" data-whatsapp href="#" aria-label="WhatsApp"></a>
 <div class="cookie" hidden>
   <p>A Liberty Saúde usa os dados dos formulários para atendimento, conforme a <a href="politica-de-privacidade.html"><u>Política de Privacidade</u></a>.</p>
   <button class="btn btn-primary">Prosseguir</button>
@@ -93,6 +32,11 @@
 <script src="../js/site-ui.js"></script>
 <script src="../js/config.js"></script>
 <script src="../js/main.js"></script>
-<script src="../js/script.js"></script>
+<script src="../js/formulario.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    createQuotationForm('formulario-container');
+  });
+</script>
 </body>
 </html>
