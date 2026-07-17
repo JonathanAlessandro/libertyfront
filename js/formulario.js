@@ -64,7 +64,7 @@ function createQuotationForm(containerId, produtoNome = '') {
 
         <div class="form-group checkbox-group">
           <label>
-            <input type="checkbox" name="aceitaEmails">
+            <input type="checkbox" name="aceitaEmails" checked>
             Aceita receber e-mails
           </label>
         </div>
