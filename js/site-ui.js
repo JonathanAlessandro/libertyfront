@@ -1,6 +1,6 @@
 (function(){
   const currentPath = location.pathname.replace(/\\/g, '/');
-  const rootPath = currentPath.includes('/pages/') ? '../' : './';
+  const rootPath = 'https://libertysaude.com.br/';
 
   const navItems = [
     { label: 'Início', href: 'index.html' },

@@ -27,9 +27,7 @@
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
     
-    // Determinar o caminho correto para o SVG baseado na localização atual
-    const isInPages = location.pathname.includes('/pages/');
-    const svgPath = isInPages ? '../assets/images/whatsapplogo.svg' : 'assets/images/whatsapplogo.svg';
+    const svgPath = 'https://libertysaude.com.br/assets/images/whatsapplogo.svg';
     
     // Substituir conteúdo pelo SVG do WhatsApp (remover texto)
     a.innerHTML = `<img src="${svgPath}" alt="WhatsApp" style="width: 100%; height: 100%; object-fit: contain;">`;
