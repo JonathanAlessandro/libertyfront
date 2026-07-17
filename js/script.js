@@ -1,4 +1,4 @@
-const API_URL = 'http://twlm4h21plszdybor5mfvyif.200.234.212.102.sslip.io/api/clientes';
+const API_URL = 'https://api.libertysaude.com.br/api/clientes';
 
 function toggleCnpj() {
   const noCnpj = document.getElementById('noCnpj').checked;
