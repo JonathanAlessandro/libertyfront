@@ -5,7 +5,7 @@
   const navItems = [
     { label: 'Início', href: 'index.html' },
     { label: 'Quem somos', href: 'pages/quem-somos.html' },
-    { label: 'Contato', href: 'pages/contato.html' }
+    // { label: 'Contato', href: 'pages/contato.html' }
   ];
 
   const planItems = [
