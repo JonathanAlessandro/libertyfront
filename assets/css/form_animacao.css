@@ -1,0 +1,105 @@
+.form-message {
+    display: none;
+    margin-top: 16px;
+}
+
+.form-message.is-visible {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border: 1px solid #b7ebc6;
+    border-radius: 12px;
+    background: #effcf3;
+    color: #176b35;
+    animation: messageEnter 0.45s ease forwards;
+}
+
+.form-message.is-error {
+    border-color: #f3b8b8;
+    background: #fff1f1;
+    color: #a12626;
+}
+
+.form-message-icon {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    animation: iconPop 0.5s 0.15s cubic-bezier(.2, 1.4, .4, 1) both;
+}
+
+.form-message.is-error .form-message-icon {
+    background: #d83b3b;
+}
+
+.form-message-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+}
+
+.form-message-text strong {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.form-message-text span {
+    display: block;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.form-submit.is-loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.form-submit.is-loading::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    margin-right: 9px;
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-top-color: #fff;
+    border-radius: 50%;
+    vertical-align: -3px;
+    animation: buttonSpin 0.75s linear infinite;
+}
+
+@keyframes buttonSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes messageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes iconPop {
+    from {
+        opacity: 0;
+        transform: scale(0.3) rotate(-20deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
