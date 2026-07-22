@@ -159,7 +159,9 @@
         <span class="eyebrow on-navy">As melhores opções do mercado</span>
         <h2>Trabalhamos com as principais operadoras</h2>
         <div class="op-grid">
-            <div class="op-card"><img alt="Alice" src="assets/images/image-b29a62633097.png" /></div>
+            <a href="/pages/alice-saude-landing.html" class="op-card">
+                <img alt="Alice" src="assets/images/image-b29a62633097.png">
+            </a>
             <div class="op-card"><img alt="Amil" src="assets/images/image-c6a25ff368ba.png" /></div>
             <div class="op-card"><img alt="Bradesco Saúde" src="assets/images/image-eacfe23ed692.png" /></div>
             <div class="op-card"><img alt="Hapvida NotreDame" src="assets/images/image-fdb704a2efb8.png" /></div>
@@ -225,18 +227,23 @@
                 <div class="form-two">
                     <div class="form-row">
                         <label for="nome">Nome completo</label>
-                        <input autocomplete="name" id="nome" name="nome" placeholder="Digite seu nome completo"
-                            required="" type="text" />
+                        <input ...>
                     </div>
+
                     <div class="form-row">
                         <label for="cnpj">CNPJ</label>
-                        <input id="cnpj" inputmode="numeric" maxlength="18" name="cnpj" placeholder="00.000.000/0000-00"
-                            required="" type="text" />
+                        <input ...>
+
+                        <div class="form-check"
+                            style="margin-top:8px;display:flex;align-items:center;justify-content:flex-start;gap:5px;flex-wrap:nowrap;">
+                            <input id="noCnpj" name="noCnpj" type="checkbox"
+                                style="width:16px;height:16px;margin:0;padding:0;flex:0 0 16px;">
+                            <label for="noCnpj"
+                                style="display:inline-block;margin:0;padding:0;line-height:1;white-space:nowrap;">
+                                Não possuo CNPJ
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="form-check">
-                    <input id="noCnpj" name="noCnpj" type="checkbox" />
-                    <label for="noCnpj">Não possuo CNPJ</label>
                 </div>
                 <div class="form-two">
                     <div class="form-row">
@@ -271,10 +278,7 @@
                         <option value="Não tenho plano de saúde">Não possuo plano de saúde</option>
                     </select>
                 </div>
-                <div class="form-check">
-                    <input id="semPlano" name="semPlano" type="checkbox" />
-                    <label for="semPlano">Não possuo plano de saúde atualmente</label>
-                </div>
+
                 <div class="form-row">
                     <label for="idades">Idades dos beneficiários</label>
                     <input id="idades" inputmode="numeric" name="idades" placeholder="Ex.: 35, 32, 10, 8" required=""
@@ -294,6 +298,52 @@
             </form>
         </div>
     </section>
+
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-widget-header">
+            <div class="chat-widget-avatar">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+                </svg>
+            </div>
+            <div>
+                <div class="chat-widget-name">Ana · Liberty Saúde</div>
+                <div class="chat-widget-status">Online agora</div>
+            </div>
+            <button class="chat-widget-close" id="chatCloseBtn" aria-label="Fechar chat">✕</button>
+        </div>
+        <div class="chat-widget-body" id="chatBody">
+            <div class="chat-bubble-row">
+                <div class="chat-bubble-avatar"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg></div>
+                <div class="chat-bubble">Oi, tudo bem? 😊</div>
+            </div>
+            <div class="chat-bubble-row delay1">
+                <div class="chat-bubble-avatar"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+                    </svg></div>
+                <div class="chat-bubble">Quer receber uma cotação do plano agora mesmo,
+                    direto no
+                    WhatsApp?</div>
+            </div>
+            <div class="chat-cta-wrap">
+                <button class="chat-cta-btn" id="chatCtaBtn">
+                    SIM, EU QUERO!
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                </button>
+                <p class="chat-fineprint">Seus dados estão seguros. Não compartilhamos suas informações.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-top">
@@ -340,6 +390,7 @@
     </a>
     <script defer="" src="assets/js/formulario.js"></script>
     <script defer="" src="assets/js/component.js"></script>
+    <script src="./assets/js/chat-widget.js"></script>
 </body>
 
 </html>
