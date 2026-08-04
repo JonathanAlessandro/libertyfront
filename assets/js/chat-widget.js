@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Olá! Vim pelo site da Liberty Saúde e gostaria de uma cotação.";
 
         window.open(
-            `https://wa.me/5511989152642?text=${encodeURIComponent(mensagem)}`,
+            `https://wa.me/5511945189498?text=${encodeURIComponent(mensagem)}`,
             "_blank"
         );
     });
