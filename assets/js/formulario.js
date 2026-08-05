@@ -1,8 +1,14 @@
 const API_URL = 'https://api.libertysaude.com.br/api/clientes';
 
 function toggleCnpj() {
-  const noCnpj = document.getElementById('noCnpj').checked;
-  const cnpjInput = document.getElementById('cnpj');
+  const cnpjInput = document.querySelector('input[name="cnpj"], #cnpj');
+  const noCnpjCheckbox = document.querySelector('input[name="noCnpj"], #noCnpj');
+
+  if (!cnpjInput || !noCnpjCheckbox) {
+    return;
+  }
+
+  const noCnpj = noCnpjCheckbox.checked;
 
   cnpjInput.disabled = noCnpj;
   cnpjInput.required = !noCnpj;
@@ -190,7 +196,7 @@ async function handleSubmit(event) {
     telefone: getTelefoneSemMascara(),
 
     cnpj: noCnpj
-      ? null
+      ? 'não possui'
       : getDocumentoSemMascara('cnpj'),
 
     noCnpj,
@@ -265,28 +271,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const noCnpj = document.getElementById('noCnpj');
   const semPlano = document.getElementById('semPlano');
 
-  if (
-    !form ||
-    !telefone ||
-    !cnpj ||
-    !noCnpj ||
-    !semPlano
-  ) {
-    return;
+  if (telefone) {
+    telefone.addEventListener('input', () => {
+      formatarTelefone(telefone);
+    });
   }
 
-  telefone.addEventListener('input', () => {
-    formatarTelefone(telefone);
-  });
+  if (cnpj) {
+    cnpj.addEventListener('input', () => {
+      formatarDocumento(cnpj);
+    });
+  }
 
-  cnpj.addEventListener('input', () => {
-    formatarDocumento(cnpj);
-  });
+  if (noCnpj) {
+    noCnpj.addEventListener('change', toggleCnpj);
+    toggleCnpj();
+  }
 
-  noCnpj.addEventListener('change', toggleCnpj);
-  semPlano.addEventListener('change', togglePlano);
-  form.addEventListener('submit', handleSubmit);
+  if (semPlano) {
+    semPlano.addEventListener('change', togglePlano);
+    togglePlano();
+  }
 
-  toggleCnpj();
-  togglePlano();
+  if (form) {
+    form.addEventListener('submit', handleSubmit);
+  }
 });
