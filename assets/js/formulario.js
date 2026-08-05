@@ -112,10 +112,13 @@ function validarFormulario() {
   const nome = document.getElementById('nome').value.trim();
   const email = document.getElementById('email').value.trim();
   const telefone = getTelefoneSemMascara();
-  const noCnpj = document.getElementById('noCnpj').checked;
-  const cnpj = getDocumentoSemMascara('cnpj');
+  const noCnpjCheckbox = document.getElementById('noCnpj');
+  const noCnpj = noCnpjCheckbox ? noCnpjCheckbox.checked : false;
+  const cnpjInput = document.getElementById('cnpj');
+  const cnpj = cnpjInput ? getDocumentoSemMascara('cnpj') : '';
   const hospital = document.getElementById('hospital').value.trim();
-  const semPlano = document.getElementById('semPlano').checked;
+  const semPlanoCheckbox = document.getElementById('semPlano');
+  const semPlano = semPlanoCheckbox ? semPlanoCheckbox.checked : false;
   const planoAtual = document.getElementById('plano_atual').value.trim();
   const idades = parseIdades(
     document.getElementById('idades').value.trim()
@@ -138,6 +141,14 @@ function validarFormulario() {
 
   if (telefone.length < 10 || telefone.length > 11) {
     mostrarMensagem('Informe um telefone válido com DDD.', 'error');
+    return false;
+  }
+
+  if (!noCnpj && cnpj.length === 0) {
+    mostrarMensagem(
+      'Informe um CNPJ ou marque que não possui CNPJ.',
+      'error'
+    );
     return false;
   }
 
