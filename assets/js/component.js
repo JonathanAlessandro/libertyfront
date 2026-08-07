@@ -24,11 +24,11 @@ async function carregarComponente(containerId, arquivo) {
 document.addEventListener('DOMContentLoaded', async () => {
   await carregarComponente(
     'navbar-container',
-    'assets/components/navbar.html'
+    '/assets/components/navbar.html'
   );
 
   await carregarComponente(
     'footer-container',
-    'assets/components/footer.html'
+    '/assets/components/footer.html'
   );
 });
