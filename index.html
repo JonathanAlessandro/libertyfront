@@ -197,21 +197,17 @@
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  rel="preload"
-  as="style"
-  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
-  rel="stylesheet"
-  media="print"
-  onload="this.media='all'" />
-<noscript>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-</noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+    </noscript>
 
     <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/form_animacao.css" media="print" onload="this.media='all'">
@@ -219,7 +215,45 @@
 
 <body>
     <div class="top-block" id="topo">
-        <div id="navbar-container"></div>
+        <nav class="nav" role="navigation">
+            <div class="nav-inner">
+                <img alt="Liberty Saúde" fetchpriority="high" class="nav-logo"
+                    src="/assets/images/image-c0cd7413fee8.png" />
+
+                <ul class="nav-links">
+                    <li><a href="/#topo">Home</a></li>
+                    <li><a href="/#sobre">Quem somos</a></li>
+
+                    <li class="nav-dropdown">
+                        <a class="nav-dropdown-trigger" title="Nossos planos de saúde">
+                            Planos
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </a>
+                        <ul class="nav-dropdown-menu">
+                            <li><a href="/pages/plano-de-saude-empresarial.html"
+                                    title="Plano de Saúde Empresarial">Plano Empresarial</a>
+                            </li>
+                            <li><a href="/pages/plano-de-saude-individual.html"
+                                    title="Plano de Saúde Individual e Familiar">Plano
+                                    Individual e Familiar</a></li>
+                            <li><a href="/pages/comparativo-planos-de-saude.html"
+                                    title="Comparativo de Planos de Saúde">Comparar
+                                    Operadoras</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/#operadoras">Operadoras</a></li>
+                    <li><a href="/#contato">Contato</a></li>
+                </ul>
+
+                <a class="nav-cta" href="/#contato">
+                    Fale com um especialista
+                </a>
+            </div>
+        </nav>
 
 
         <section class="hero" role="main">
@@ -444,13 +478,15 @@
                 <div class="form-two">
                     <div class="form-row">
                         <label for="nome">Nome completo</label>
-                        <input autocomplete="name" id="nome" name="nome" placeholder="Seu nome completo" required="" type="text">
+                        <input autocomplete="name" id="nome" name="nome" placeholder="Seu nome completo" required=""
+                            type="text">
                     </div>
 
                     <div class="form-row">
                         <label for="cnpj">CNPJ</label>
-                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
-                        
+                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00"
+                            pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
+
                         <div class="form-check"
                             style="margin-top:8px;display:flex;align-items:center;justify-content:flex-start;gap:5px;flex-wrap:nowrap;">
                             <input id="noCnpj" name="noCnpj" type="checkbox"
