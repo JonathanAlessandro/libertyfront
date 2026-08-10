@@ -210,7 +210,10 @@
             rel="stylesheet" />
     </noscript>
 
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </noscript>
     <link rel="stylesheet" href="assets/css/form_animacao.css" media="print" onload="this.media='all'">
 </head>
 
