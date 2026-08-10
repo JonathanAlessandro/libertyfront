@@ -197,24 +197,20 @@
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  rel="preload"
-  as="style"
-  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
-  rel="stylesheet"
-  media="print"
-  onload="this.media='all'" />
-<noscript>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-</noscript>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet" />
+    </noscript>
 
     <link href="assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/form_animacao.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/form_animacao.css" media="print" onload="this.media='all'">
 </head>
 
 <body>
@@ -444,13 +440,15 @@
                 <div class="form-two">
                     <div class="form-row">
                         <label for="nome">Nome completo</label>
-                        <input autocomplete="name" id="nome" name="nome" placeholder="Seu nome completo" required="" type="text">
+                        <input autocomplete="name" id="nome" name="nome" placeholder="Seu nome completo" required=""
+                            type="text">
                     </div>
 
                     <div class="form-row">
                         <label for="cnpj">CNPJ</label>
-                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
-                        
+                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00"
+                            pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
+
                         <div class="form-check"
                             style="margin-top:8px;display:flex;align-items:center;justify-content:flex-start;gap:5px;flex-wrap:nowrap;">
                             <input id="noCnpj" name="noCnpj" type="checkbox"
