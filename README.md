@@ -18,3 +18,6 @@ O formulário envia JSON para:
 `https://api.libertysaude.com.br/api/clientes`
 
 Campos enviados: `nome`, `email`, `telefone`, `cnpj`, `noCnpj`, `hospital`, `plano_atual`, `idades` e `aceitaEmails`.
+
+publicado em:
+https://libertysaude.com.br/
