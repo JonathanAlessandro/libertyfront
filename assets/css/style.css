@@ -32,6 +32,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Reserva o espaço do menu carregado como componente e evita salto visual. */
+#navbar-container {
+  min-height: 92px;
+}
+
 h1,
 h2,
 h3 {
@@ -875,6 +880,21 @@ body {
   color: rgba(250, 246, 238, 0.5);
 }
 
+.footer-legal {
+  margin-top: 8px;
+}
+
+.footer-legal a {
+  color: rgba(250, 246, 238, 0.72);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-legal a:hover,
+.footer-legal a:focus-visible {
+  color: #fff;
+}
+
 
   /* ============ CHAT WIDGET ============ */
   .chat-widget {
@@ -1153,6 +1173,10 @@ body {
 
 /* Responsivo */
 @media (max-width: 560px) {
+
+  #navbar-container {
+    min-height: 76px;
+  }
   .chat-widget {
     right: 16px;
     bottom: 88px;

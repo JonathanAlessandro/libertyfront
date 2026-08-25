@@ -22,13 +22,8 @@ async function carregarComponente(containerId, arquivo) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-  await carregarComponente(
-    'navbar-container',
-    '/assets/components/navbar.html'
-  );
-
-  await carregarComponente(
-    'footer-container',
-    '/assets/components/footer.html'
-  );
+  await Promise.all([
+    carregarComponente('navbar-container', '/assets/components/navbar.html'),
+    carregarComponente('footer-container', '/assets/components/footer.html'),
+  ]);
 });
