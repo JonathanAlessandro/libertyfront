@@ -223,7 +223,10 @@ async function handleSubmit(event) {
     ),
 
     aceitaEmails:
-      document.getElementById('aceitaEmails').checked
+      document.getElementById('aceitaEmails').checked,
+    aceitaWhatsapp:
+      document.getElementById('aceitaWhatsapp').checked,
+    versaoPoliticaPrivacidade: '2026-09-23'
   };
 
   submitBtn.disabled = true;
@@ -257,6 +260,7 @@ async function handleSubmit(event) {
       'Solicitação enviada com sucesso!',
       'success'
     );
+    form.dispatchEvent(new Event('lead:submission-success'));
 
     form.reset();
 
