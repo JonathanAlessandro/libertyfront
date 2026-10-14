@@ -1,0 +1,3046 @@
+[
+  {
+    "id": "home",
+    "path": "/",
+    "component": "Home",
+    "tags": [
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preload",
+          "as": "image",
+          "href": "/assets/images/image-c0cd7413fee8.png",
+          "fetchpriority": "high"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "utf-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "content": "width=device-width, initial-scale=1.0",
+          "name": "viewport"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Liberty Saúde | Corretora de Planos de Saúde Individual e Empresarial"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Corretora de planos de saúde individual, familiar e empresarial. Comparamos Amil, Bradesco Saúde, Hapvida, SulAmérica, Unimed e mais. Cotação grátis com o melhor custo-benefício."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "content": "corretora de planos de saúde, plano de saúde individual, plano de saúde empresarial, plano de saúde familiar, cotação plano de saúde, melhor plano de saúde, Amil, Bradesco Saúde, Hapvida, NotreDame Intermédica, SulAmérica, Unimed, Porto Saúde, convênio médico, seguro saúde, plano médico, corretor de planos de saúde, planos de saúde SP, plano de saúde com CNPJ, plano de saúde adesão"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "language",
+          "content": "Portuguese"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "http-equiv": "Content-Language",
+          "content": "pt-BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.region",
+          "content": "BR-SP"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.placename",
+          "content": "São Paulo"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.position",
+          "content": "-23.5475;-46.6361"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "ICBM",
+          "content": "-23.5475, -46.6361"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Liberty Saúde | Corretora de Planos de Saúde Individual e Empresarial"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Corretora de planos de saúde individual, familiar e empresarial. Comparamos Amil, Bradesco, Hapvida, SulAmérica e Unimed. Faça uma cotação grátis!"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:secure_url",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:alt",
+          "content": "Liberty Saúde - Corretora de Planos de Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Liberty Saúde | Corretora de Planos de Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Planos de saúde individual e empresarial. Cotação grátis com as melhores operadoras do mercado."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image:alt",
+          "content": "Liberty Saúde Corretora"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"InsuranceAgency\",\n      \"name\": \"Liberty Saúde Corretora de Seguros\",\n      \"alternateName\": \"Liberty Saúde\",\n      \"description\": \"Corretora especializada em planos de saúde individual, familiar e empresarial. Atendimento consultivo com as principais operadoras do mercado.\",\n      \"url\": \"https://libertysaude.com.br/\",\n      \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n      \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n      \"priceRange\": \"$$\",\n      \"telephone\": \"+55-11-98915-2642\",\n      \"email\": \"comercial@libertysaude.com.br\",\n      \"address\": {\n        \"@type\": \"PostalAddress\",\n        \"addressCountry\": \"BR\",\n        \"addressRegion\": \"SP\",\n        \"addressLocality\": \"São Paulo\"\n      },\n      \"geo\": {\n        \"@type\": \"GeoCoordinates\",\n        \"latitude\": \"-23.5475\",\n        \"longitude\": \"-46.6361\"\n      },\n      \"areaServed\": [\n        {\n          \"@type\": \"Country\",\n          \"name\": \"Brasil\"\n        }\n      ],\n      \"openingHours\": [\n        \"Mo-Fr 08:00-18:00\",\n        \"Sa 09:00-13:00\"\n      ],\n      \"sameAs\": [],\n      \"contactPoint\": {\n        \"@type\": \"ContactPoint\",\n        \"telephone\": \"+55-11-98915-2642\",\n        \"contactType\": \"customer service\",\n        \"areaServed\": \"BR\",\n        \"availableLanguage\": [\"Portuguese\", \"English\"]\n      },\n      \"offers\": [\n        {\n          \"@type\": \"Offer\",\n          \"name\": \"Plano de Saúde Individual\",\n          \"description\": \"Planos de saúde individuais personalizados com as melhores operadoras.\",\n          \"category\": \"Individual Health Insurance\"\n        },\n        {\n          \"@type\": \"Offer\",\n          \"name\": \"Plano de Saúde Familiar\",\n          \"description\": \"Planos de saúde familiares com atendimento para toda a família.\",\n          \"category\": \"Family Health Insurance\"\n        },\n        {\n          \"@type\": \"Offer\",\n          \"name\": \"Plano de Saúde Empresarial\",\n          \"description\": \"Planos de saúde empresariais com CNPJ para sua empresa.\",\n          \"category\": \"Group Health Insurance\"\n        }\n      ],\n      \"knowsAbout\": [\n        \"Plano de Saúde\",\n        \"Corretora de Seguros Saúde\",\n        \"Plano de Saúde Individual\",\n        \"Plano de Saúde Empresarial\",\n        \"Plano de Saúde Familiar\",\n        \"Cotação de Plano de Saúde\",\n        \"Convenio Médico\",\n        \"Seguro Saúde\",\n        \"Amil\",\n        \"Bradesco Saúde\",\n        \"Hapvida\",\n        \"NotreDame Intermédica\",\n        \"SulAmérica Saúde\",\n        \"Porto Saúde\",\n        \"Unimed\",\n        \"Plano por Adesão\"\n      ]\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Como funciona a cotação de plano de saúde na Liberty Saúde?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Na Liberty Saúde comparamos as principais operadoras de plano de saúde do mercado (Amil, Bradesco Saúde, Hapvida, SulAmérica, Unimed e outras) para encontrar a melhor opção com custo-benefício para você, sua família ou empresa. Basta preencher nosso formulário ou falar no WhatsApp.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Quais tipos de planos de saúde a Liberty Saúde oferece?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Oferecemos planos de saúde individual, plano de saúde familiar, plano de saúde empresarial com CNPJ, planos de saúde por adesão e planos com cobertura nacional e internacional.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"A cotação de plano de saúde é gratuita?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Sim! A cotação é 100% gratuita e sem compromisso. Comparar as operadoras não custa nada e ajuda você a encontrar o melhor plano de saúde para sua necessidade.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Quais operadoras de plano de saúde a Liberty Saúde trabalha?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Trabalhamos com as principais operadoras: Amil, Bradesco Saúde, Hapvida NotreDame, Porto Saúde, SulAmérica Saúde, Unimed, MedSênior, Prevent Senior, Sami, Santa Helena, São Cristóvão, Seguros Unimed, Uni Hosp Saúde e muitas outras.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"É melhor contratar plano de saúde por CNPJ?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Planos de saúde empresariais com CNPJ costumam ter preços menores que planos individuais. A Liberty Saúde ajuda a avaliar se essa é a melhor opção para você, inclusive para microempreendedores (MEI).\"\n          }\n        }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"WebSite\",\n      \"name\": \"Liberty Saúde\",\n      \"url\": \"https://libertysaude.com.br/\",\n      \"potentialAction\": {\n        \"@type\": \"SearchAction\",\n        \"target\": \"https://libertysaude.com.br/?s={search_term_string}\",\n        \"query-input\": \"required name=search_term_string\"\n      }\n    }\n    "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "style.css"
+    ]
+  },
+  {
+    "id": "alice-saude-landing",
+    "path": "/pages/alice-saude-landing.html",
+    "component": "AliceSaudeLanding",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "UTF-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Alice | Empresarial e Individual - Cotação Grátis"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Conheça o plano de saúde Alice: atendimento pelo app, Time de Saúde disponível e experiência sem burocracia. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude alice, alice saude, alice operadora, plano alice empresarial, plano alice individual, quanto custa o plano alice"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/alice-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Alice | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Conheça o plano de saúde Alice: atendimento pelo app, Time de Saúde disponível e experiência sem burocracia. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/alice-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Alice | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Conheça o plano de saúde Alice: atendimento pelo app, Time de Saúde disponível e experiência sem burocracia. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"InsuranceAgency\",\n  \"name\": \"Liberty Saúde Corretora de Seguros\",\n  \"alternateName\": \"Liberty Saúde\",\n  \"description\": \"Corretora especializada em planos de saúde Alice, empresarial e individual. Cotação gratuita comparando as principais operadoras do mercado.\",\n  \"url\": \"https://libertysaude.com.br/pages/alice-saude-landing.html\",\n  \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n  \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n  \"priceRange\": \"$$\",\n  \"telephone\": \"+55-11-98915-2642\",\n  \"email\": \"comercial@libertysaude.com.br\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressCountry\": \"BR\",\n    \"addressRegion\": \"SP\",\n    \"addressLocality\": \"São Paulo\"\n  },\n  \"areaServed\": [\n    {\n      \"@type\": \"Country\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"openingHours\": [\n    \"Mo-Fr 08:00-18:00\",\n    \"Sa 09:00-13:00\"\n  ],\n  \"makesOffer\": [\n    {\n      \"@type\": \"Offer\",\n      \"name\": \"Plano de Saúde Alice\",\n      \"description\": \"Plano de saúde Alice empresarial e individual, com cotação comparativa gratuita.\",\n      \"category\": \"Health Insurance\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quanto custa o plano de saúde Alice?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O valor varia conforme idade, região e se a contratação é individual ou empresarial. Fazemos uma cotação gratuita comparando a Alice com outras operadoras para o seu perfil.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"O plano Alice atende em todo o Brasil?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"A Alice tem forte atuação em grandes centros urbanos, com Time de Saúde disponível pelo aplicativo. Confirmamos a cobertura na sua região durante a cotação.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Como contratar o plano Alice com desconto?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Contratações empresariais via CNPJ costumam ter condições melhores que planos individuais. Ajudamos a verificar se sua empresa se qualifica para desconto coletivo.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Alice individual ou empresarial: qual escolher?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Depende do seu vínculo: se você tem CNPJ (mesmo como MEI), o plano empresarial costuma sair mais em conta. Se não tem, o plano individual é a opção.\"\n      }\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Início\",\n      \"item\": \"https://libertysaude.com.br/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Plano de Saúde Alice\",\n      \"item\": \"https://libertysaude.com.br/pages/alice-saude-landing.html\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "alice.css"
+    ]
+  },
+  {
+    "id": "amil-saude-landing",
+    "path": "/pages/amil-saude-landing.html",
+    "component": "AmilSaudeLanding",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "UTF-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Amil | Empresarial e Individual - Cotação Grátis"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Conheça o plano de saúde Amil: ampla rede credenciada e cobertura em todo o Brasil. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude amil, amil saude, plano amil empresarial, plano amil individual, quanto custa o plano amil, tabela amil"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/amil-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Amil | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Conheça o plano de saúde Amil: ampla rede credenciada e cobertura em todo o Brasil. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/amil-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Amil | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Conheça o plano de saúde Amil: ampla rede credenciada e cobertura em todo o Brasil. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"InsuranceAgency\",\n  \"name\": \"Liberty Saúde Corretora de Seguros\",\n  \"alternateName\": \"Liberty Saúde\",\n  \"description\": \"Corretora especializada em planos de saúde Amil, empresarial e individual. Cotação gratuita comparando as principais operadoras do mercado.\",\n  \"url\": \"https://libertysaude.com.br/pages/amil-saude-landing.html\",\n  \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n  \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n  \"priceRange\": \"$$\",\n  \"telephone\": \"+55-11-98915-2642\",\n  \"email\": \"comercial@libertysaude.com.br\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressCountry\": \"BR\",\n    \"addressRegion\": \"SP\",\n    \"addressLocality\": \"São Paulo\"\n  },\n  \"areaServed\": [\n    {\n      \"@type\": \"Country\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"openingHours\": [\n    \"Mo-Fr 08:00-18:00\",\n    \"Sa 09:00-13:00\"\n  ],\n  \"makesOffer\": [\n    {\n      \"@type\": \"Offer\",\n      \"name\": \"Plano de Saúde Amil\",\n      \"description\": \"Plano de saúde Amil empresarial e individual, com cotação comparativa gratuita.\",\n      \"category\": \"Health Insurance\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quanto custa o plano de saúde Amil?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O valor varia conforme idade, região, rede escolhida e tipo de contratação (individual ou empresarial). Fazemos uma cotação gratuita comparando a Amil com outras operadoras.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"A Amil atende em todo o Brasil?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Sim, a Amil tem uma das maiores redes credenciadas e próprias do país, com presença em grandes centros urbanos. Confirmamos a cobertura na sua região durante a cotação.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Como contratar o plano Amil com desconto?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Contratações empresariais via CNPJ, a partir de 2 ou 3 vidas, costumam ter mensalidades menores que planos individuais equivalentes.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Amil individual ou empresarial: qual escolher?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Se você tem CNPJ (mesmo como MEI), o plano empresarial costuma sair mais em conta. Se não tem, o plano individual é a opção, com regras de reajuste definidas pela ANS.\"\n      }\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Início\",\n      \"item\": \"https://libertysaude.com.br/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Plano de Saúde Amil\",\n      \"item\": \"https://libertysaude.com.br/pages/amil-saude-landing.html\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "amil.css"
+    ]
+  },
+  {
+    "id": "bradesco-saude-landing",
+    "path": "/pages/bradesco-saude-landing.html",
+    "component": "BradescoSaudeLanding",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "UTF-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Bradesco | Empresarial e Individual - Cotação Grátis"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Bradesco Saúde: rede ampla e opções de reembolso para empresas e pessoas físicas. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude bradesco, bradesco saude, plano bradesco empresarial, plano bradesco individual, quanto custa o plano bradesco saude"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/bradesco-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Bradesco | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Bradesco Saúde: rede ampla e opções de reembolso para empresas e pessoas físicas. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/bradesco-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Bradesco | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Bradesco Saúde: rede ampla e opções de reembolso para empresas e pessoas físicas. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"InsuranceAgency\",\n  \"name\": \"Liberty Saúde Corretora de Seguros\",\n  \"alternateName\": \"Liberty Saúde\",\n  \"description\": \"Corretora especializada em planos de saúde Bradesco Saúde, empresarial e individual. Cotação gratuita comparando as principais operadoras do mercado.\",\n  \"url\": \"https://libertysaude.com.br/pages/bradesco-saude-landing.html\",\n  \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n  \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n  \"priceRange\": \"$$\",\n  \"telephone\": \"+55-11-98915-2642\",\n  \"email\": \"comercial@libertysaude.com.br\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressCountry\": \"BR\",\n    \"addressRegion\": \"SP\",\n    \"addressLocality\": \"São Paulo\"\n  },\n  \"areaServed\": [\n    {\n      \"@type\": \"Country\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"openingHours\": [\n    \"Mo-Fr 08:00-18:00\",\n    \"Sa 09:00-13:00\"\n  ],\n  \"makesOffer\": [\n    {\n      \"@type\": \"Offer\",\n      \"name\": \"Plano de Saúde Bradesco Saúde\",\n      \"description\": \"Plano de saúde Bradesco Saúde empresarial e individual, com cotação comparativa gratuita.\",\n      \"category\": \"Health Insurance\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quanto custa o plano Bradesco Saúde?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O valor varia conforme idade, região, rede escolhida e tipo de contratação. Fazemos uma cotação gratuita comparando o Bradesco Saúde com outras operadoras para o seu perfil.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"O Bradesco Saúde tem opção de reembolso?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Sim, o Bradesco Saúde é conhecido por planos com opção de reembolso, o que dá mais liberdade para escolher médicos fora da rede credenciada.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Como contratar o plano Bradesco com desconto?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Contratações empresariais via CNPJ costumam ter condições melhores que planos individuais equivalentes. Verificamos se sua empresa se qualifica.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Bradesco individual ou empresarial: qual escolher?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Depende do seu vínculo: com CNPJ, o plano empresarial costuma ser mais econômico. Sem CNPJ, o plano individual segue as regras de reajuste da ANS.\"\n      }\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Início\",\n      \"item\": \"https://libertysaude.com.br/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Plano de Saúde Bradesco Saúde\",\n      \"item\": \"https://libertysaude.com.br/pages/bradesco-saude-landing.html\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "bradesco.css"
+    ]
+  },
+  {
+    "id": "comparativo-planos-de-saude",
+    "path": "/pages/comparativo-planos-de-saude.html",
+    "component": "ComparativoPlanosDeSaude",
+    "tags": [
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "utf-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "content": "width=device-width, initial-scale=1.0",
+          "name": "viewport"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Comparativo de Planos de Saúde 2026: Amil, Bradesco, Hapvida, SulAmérica e Unimed - Liberty Saúde"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Compare as principais operadoras de plano de saúde do Brasil: Amil, Bradesco Saúde, Hapvida, SulAmérica, Unimed e Porto Saúde. Veja o que avaliar antes de contratar e peça sua cotação grátis."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "comparativo planos de saude, melhor plano de saude, qual o melhor plano de saude, comparar planos de saude, ranking planos de saude, plano de saude amil ou bradesco, plano de saude unimed ou sulamerica"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "language",
+          "content": "Portuguese"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "http-equiv": "Content-Language",
+          "content": "pt-BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.region",
+          "content": "BR-SP"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.placename",
+          "content": "São Paulo"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/comparativo-planos-de-saude.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "article"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Comparativo de Planos de Saúde 2026 | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Compare Amil, Bradesco Saúde, Hapvida, SulAmérica, Unimed e Porto Saúde. Descubra qual combina com o seu perfil."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/comparativo-planos-de-saude.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:secure_url",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:alt",
+          "content": "Liberty Saúde - Comparativo de Planos de Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Comparativo de Planos de Saúde 2026 | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Compare as principais operadoras e peça sua cotação grátis."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"Article\",\n      \"headline\": \"Comparativo de Planos de Saúde 2026: qual operadora combina com você\",\n      \"description\": \"Comparação entre Amil, Bradesco Saúde, Hapvida NotreDame, SulAmérica, Unimed e Porto Saúde, com o que avaliar antes de contratar.\",\n      \"author\": { \"@type\": \"Organization\", \"name\": \"Liberty Saúde\" },\n      \"publisher\": {\n        \"@type\": \"Organization\",\n        \"name\": \"Liberty Saúde\",\n        \"logo\": { \"@type\": \"ImageObject\", \"url\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\" }\n      },\n      \"mainEntityOfPage\": \"https://libertysaude.com.br/pages/comparativo-planos-de-saude.html\"\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Qual é o melhor plano de saúde do Brasil?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Não existe um 'melhor plano' universal — cada operadora tem pontos fortes diferentes (rede hospitalar, cobertura nacional, preço, digitalização). O ideal depende do seu orçamento, região e prioridades. Fazemos uma comparação personalizada gratuita para o seu caso.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Como comparar planos de saúde antes de contratar?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Vale observar: rede credenciada na sua região, existência de coparticipação, prazos de carência, abrangência (nacional ou regional), reembolso e avaliação da operadora na ANS e no Reclame Aqui. Uma corretora pode comparar tudo isso por você sem custo.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Amil ou Bradesco Saúde: qual escolher?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Depende do perfil: avalie a rede credenciada disponível na sua cidade, se você prioriza reembolso, e o orçamento disponível. Recomendamos comparar cotações reais das duas para o seu caso específico antes de decidir.\"\n          }\n        }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com",
+          "rel": "preconnect"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "crossorigin": "",
+          "href": "https://fonts.gstatic.com",
+          "rel": "preconnect"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "style.css",
+      "comparativo-planos-de-saude-inline.css"
+    ]
+  },
+  {
+    "id": "hapvida-saude-landing",
+    "path": "/pages/hapvida-saude-landing.html",
+    "component": "HapvidaSaudeLanding",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "UTF-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Hapvida | Empresarial e Individual - Cotação Grátis"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Hapvida NotreDame Intermédica: plano de saúde com bom custo-benefício e rede própria de hospitais e clínicas. Compare com outras operadoras e peça sua cotação gratuita."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude hapvida, hapvida saude, plano hapvida empresarial, plano hapvida individual, quanto custa o plano hapvida, notre dame intermedica"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/hapvida-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Hapvida | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Hapvida NotreDame Intermédica: plano de saúde com bom custo-benefício e rede própria de hospitais e clínicas. Compare com outras operadoras e peça sua cotação gratuita."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/hapvida-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Hapvida | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Hapvida NotreDame Intermédica: plano de saúde com bom custo-benefício e rede própria de hospitais e clínicas. Compare com outras operadoras e peça sua cotação gratuita."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"InsuranceAgency\",\n  \"name\": \"Liberty Saúde Corretora de Seguros\",\n  \"alternateName\": \"Liberty Saúde\",\n  \"description\": \"Corretora especializada em planos de saúde Hapvida, empresarial e individual. Cotação gratuita comparando as principais operadoras do mercado.\",\n  \"url\": \"https://libertysaude.com.br/pages/hapvida-saude-landing.html\",\n  \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n  \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n  \"priceRange\": \"$$\",\n  \"telephone\": \"+55-11-98915-2642\",\n  \"email\": \"comercial@libertysaude.com.br\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressCountry\": \"BR\",\n    \"addressRegion\": \"SP\",\n    \"addressLocality\": \"São Paulo\"\n  },\n  \"areaServed\": [\n    {\n      \"@type\": \"Country\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"openingHours\": [\n    \"Mo-Fr 08:00-18:00\",\n    \"Sa 09:00-13:00\"\n  ],\n  \"makesOffer\": [\n    {\n      \"@type\": \"Offer\",\n      \"name\": \"Plano de Saúde Hapvida\",\n      \"description\": \"Plano de saúde Hapvida empresarial e individual, com cotação comparativa gratuita.\",\n      \"category\": \"Health Insurance\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quanto custa o plano de saúde Hapvida?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O valor varia conforme idade, região e tipo de contratação. A Hapvida costuma ter um dos melhores custo-benefícios do mercado. Fazemos cotação gratuita comparando com outras operadoras.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"A Hapvida tem hospitais próprios?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Sim, a Hapvida NotreDame Intermédica opera com um modelo verticalizado, com hospitais e clínicas próprios em diversas regiões do país.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Como contratar o plano Hapvida com desconto?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Contratações empresariais via CNPJ, a partir de 2 ou 3 vidas, costumam sair mais em conta do que planos individuais equivalentes.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Hapvida individual ou empresarial: qual escolher?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Com CNPJ (mesmo MEI), o plano empresarial tende a ser mais econômico. Sem CNPJ, o plano individual segue as regras de carência e reajuste da ANS.\"\n      }\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Início\",\n      \"item\": \"https://libertysaude.com.br/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Plano de Saúde Hapvida\",\n      \"item\": \"https://libertysaude.com.br/pages/hapvida-saude-landing.html\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "hapvida.css"
+    ]
+  },
+  {
+    "id": "plano-de-saude-empresarial",
+    "path": "/pages/plano-de-saude-empresarial.html",
+    "component": "PlanoDeSaudeEmpresarial",
+    "tags": [
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "utf-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "content": "width=device-width, initial-scale=1.0",
+          "name": "viewport"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Empresarial | Cotação com Desconto por CNPJ - Liberty Saúde"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Plano de saúde empresarial com desconto por CNPJ a partir de 2 vidas. Comparamos Amil, Bradesco Saúde, Hapvida, SulAmérica, Unimed e mais. Cotação grátis em minutos."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude empresarial, plano de saude CNPJ, plano de saude para empresa, plano de saude MEI, convenio medico empresarial, plano de saude PJ, unimed empresarial, plano empresarial saude"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "language",
+          "content": "Portuguese"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "http-equiv": "Content-Language",
+          "content": "pt-BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.region",
+          "content": "BR-SP"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.placename",
+          "content": "São Paulo"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.position",
+          "content": "-23.5475;-46.6361"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "ICBM",
+          "content": "-23.5475, -46.6361"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/plano-de-saude-empresarial.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Empresarial | Cotação com Desconto por CNPJ"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Plano de saúde empresarial com desconto por CNPJ. Comparamos as melhores operadoras. Cotação grátis!"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/plano-de-saude-empresarial.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:secure_url",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:alt",
+          "content": "Liberty Saúde - Plano de Saúde Empresarial"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Empresarial | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Desconto por CNPJ a partir de 2 vidas. Cotação grátis com as melhores operadoras do mercado."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image:alt",
+          "content": "Liberty Saúde Corretora"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"InsuranceAgency\",\n      \"name\": \"Liberty Saúde Corretora de Seguros\",\n      \"alternateName\": \"Liberty Saúde\",\n      \"description\": \"Corretora especializada em planos de saúde empresariais com CNPJ. Comparação entre as principais operadoras do mercado com atendimento consultivo.\",\n      \"url\": \"https://libertysaude.com.br/pages/plano-de-saude-empresarial.html\",\n      \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n      \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n      \"priceRange\": \"$$\",\n      \"telephone\": \"+55-11-98915-2642\",\n      \"email\": \"comercial@libertysaude.com.br\",\n      \"address\": {\n        \"@type\": \"PostalAddress\",\n        \"addressCountry\": \"BR\",\n        \"addressRegion\": \"SP\",\n        \"addressLocality\": \"São Paulo\"\n      },\n      \"geo\": {\n        \"@type\": \"GeoCoordinates\",\n        \"latitude\": \"-23.5475\",\n        \"longitude\": \"-46.6361\"\n      },\n      \"areaServed\": [{ \"@type\": \"Country\", \"name\": \"Brasil\" }],\n      \"openingHours\": [\"Mo-Fr 08:00-18:00\", \"Sa 09:00-13:00\"],\n      \"contactPoint\": {\n        \"@type\": \"ContactPoint\",\n        \"telephone\": \"+55-11-98915-2642\",\n        \"contactType\": \"customer service\",\n        \"areaServed\": \"BR\",\n        \"availableLanguage\": [\"Portuguese\"]\n      },\n      \"makesOffer\": [\n        {\n          \"@type\": \"Offer\",\n          \"name\": \"Plano de Saúde Empresarial\",\n          \"description\": \"Plano de saúde com contratação por CNPJ, geralmente com custo menor que planos individuais.\",\n          \"category\": \"Group Health Insurance\"\n        }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Qual o valor de um plano de saúde empresarial?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"O valor varia conforme a operadora, o número de vidas, a faixa etária dos beneficiários e a abrangência da rede credenciada (regional ou nacional). Em geral, planos empresariais saem mais baratos que planos individuais equivalentes. Na Liberty Saúde comparamos várias operadoras para encontrar o melhor custo-benefício para o perfil da sua empresa, com cotação gratuita.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Qual é o melhor plano de saúde para empresa?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Não existe uma operadora única 'melhor' para todas as empresas — depende do número de funcionários, da região de atuação, do orçamento disponível e da rede hospitalar desejada. Trabalhamos com Amil, Bradesco Saúde, Hapvida NotreDame, SulAmérica, Unimed e outras, e ajudamos a identificar a opção mais adequada ao seu caso.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Quem tem CNPJ paga mais barato em plano de saúde?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Sim, na maioria dos casos planos contratados via CNPJ têm mensalidades menores que planos individuais, porque são classificados como contratação coletiva empresarial. Muitas operadoras aceitam empresas a partir de 2 ou 3 vidas, incluindo MEI em algumas condições.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Qual o valor do plano Unimed empresarial?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"O valor do plano Unimed empresarial varia por região (a Unimed opera por cooperativas locais), número de vidas e faixa etária. Não trabalhamos com tabela fixa pública — fazemos uma cotação personalizada comparando a Unimed com outras operadoras para o seu CNPJ.\"\n          }\n        }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Início\", \"item\": \"https://libertysaude.com.br/\" },\n        { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Plano de Saúde Empresarial\", \"item\": \"https://libertysaude.com.br/pages/plano-de-saude-empresarial.html\" }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com",
+          "rel": "preconnect"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "crossorigin": "",
+          "href": "https://fonts.gstatic.com",
+          "rel": "preconnect"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "style.css",
+      "plano-de-saude-empresarial-inline.css"
+    ]
+  },
+  {
+    "id": "plano-de-saude-individual",
+    "path": "/pages/plano-de-saude-individual.html",
+    "component": "PlanoDeSaudeIndividual",
+    "tags": [
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "utf-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "content": "width=device-width, initial-scale=1.0",
+          "name": "viewport"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Individual e Familiar | Cotação Grátis - Liberty Saúde"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Plano de saúde individual e familiar, sem depender de CNPJ. Comparamos Amil, Bradesco Saúde, Hapvida, SulAmérica, Unimed e mais. Cotação grátis em minutos."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude individual, plano de saude familiar, plano de saude sem CNPJ, plano de saude no meu nome, plano de saude particular, seguro saude individual, convenio medico individual, plano de saude individual carencia"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "language",
+          "content": "Portuguese"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "http-equiv": "Content-Language",
+          "content": "pt-BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.region",
+          "content": "BR-SP"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.placename",
+          "content": "São Paulo"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "geo.position",
+          "content": "-23.5475;-46.6361"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "ICBM",
+          "content": "-23.5475, -46.6361"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/plano-de-saude-individual.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Individual e Familiar | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Plano de saúde individual e familiar, sem depender de CNPJ. Comparamos as melhores operadoras. Cotação grátis!"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/plano-de-saude-individual.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:secure_url",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:alt",
+          "content": "Liberty Saúde - Plano de Saúde Individual"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Individual e Familiar | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Sem depender de CNPJ. Cotação grátis com as melhores operadoras do mercado."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image:alt",
+          "content": "Liberty Saúde Corretora"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"InsuranceAgency\",\n      \"name\": \"Liberty Saúde Corretora de Seguros\",\n      \"alternateName\": \"Liberty Saúde\",\n      \"description\": \"Corretora especializada em planos de saúde individuais e familiares, sem necessidade de CNPJ. Comparação entre as principais operadoras do mercado.\",\n      \"url\": \"https://libertysaude.com.br/pages/plano-de-saude-individual.html\",\n      \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n      \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n      \"priceRange\": \"$$\",\n      \"telephone\": \"+55-11-98915-2642\",\n      \"email\": \"comercial@libertysaude.com.br\",\n      \"address\": {\n        \"@type\": \"PostalAddress\",\n        \"addressCountry\": \"BR\",\n        \"addressRegion\": \"SP\",\n        \"addressLocality\": \"São Paulo\"\n      },\n      \"geo\": { \"@type\": \"GeoCoordinates\", \"latitude\": \"-23.5475\", \"longitude\": \"-46.6361\" },\n      \"areaServed\": [{ \"@type\": \"Country\", \"name\": \"Brasil\" }],\n      \"openingHours\": [\"Mo-Fr 08:00-18:00\", \"Sa 09:00-13:00\"],\n      \"contactPoint\": {\n        \"@type\": \"ContactPoint\",\n        \"telephone\": \"+55-11-98915-2642\",\n        \"contactType\": \"customer service\",\n        \"areaServed\": \"BR\",\n        \"availableLanguage\": [\"Portuguese\"]\n      },\n      \"makesOffer\": [\n        {\n          \"@type\": \"Offer\",\n          \"name\": \"Plano de Saúde Individual e Familiar\",\n          \"description\": \"Plano de saúde contratado por pessoa física, sem necessidade de CNPJ, com opção de incluir dependentes.\",\n          \"category\": \"Individual Health Insurance\"\n        }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Quanto custa um plano de saúde individual?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"O valor varia conforme a operadora, a faixa etária, a região e a abrangência de rede escolhida. Planos individuais tendem a ser mais caros que planos empresariais equivalentes, já que não têm o desconto da contratação coletiva. Fazemos cotação gratuita comparando várias operadoras para o seu perfil.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Plano de saúde individual tem carência?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Sim, planos individuais têm prazos de carência definidos pela ANS para diferentes procedimentos (consultas, exames, cirurgias, partos). Em alguns casos é possível reduzir ou aproveitar carência via portabilidade, se você já tiver outro plano ativo há tempo suficiente.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Posso incluir dependentes no plano de saúde individual?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"Sim, a maioria das operadoras permite incluir cônjuge e filhos no mesmo plano, o que é chamado de plano familiar. Isso costuma sair mais em conta do que contratar planos separados para cada pessoa.\"\n          }\n        },\n        {\n          \"@type\": \"Question\",\n          \"name\": \"Qual a diferença entre plano de saúde individual e empresarial?\",\n          \"acceptedAnswer\": {\n            \"@type\": \"Answer\",\n            \"text\": \"O plano individual é contratado por pessoa física, sem depender de CNPJ, e costuma ter reajustes anuais definidos pela ANS. O plano empresarial é contratado por uma empresa (a partir de 2 ou 3 vidas), geralmente com mensalidade menor, mas as regras de reajuste seguem o contrato coletivo.\"\n          }\n        }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n      \"@context\": \"https://schema.org\",\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Início\", \"item\": \"https://libertysaude.com.br/\" },\n        { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Plano de Saúde Individual\", \"item\": \"https://libertysaude.com.br/pages/plano-de-saude-individual.html\" }\n      ]\n    }\n    "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com",
+          "rel": "preconnect"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "crossorigin": "",
+          "href": "https://fonts.gstatic.com",
+          "rel": "preconnect"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "style.css",
+      "plano-de-saude-individual-inline.css"
+    ]
+  },
+  {
+    "id": "porto-saude-landing",
+    "path": "/pages/porto-saude-landing.html",
+    "component": "PortoSaudeLanding",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "UTF-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde Porto | Empresarial - Cotação Grátis"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Porto Saúde: plano de saúde empresarial com boa presença no mercado. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude porto, porto saude, plano porto empresarial, quanto custa o plano porto saude, porto seguro saude"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/porto-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde Porto | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "Porto Saúde: plano de saúde empresarial com boa presença no mercado. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/porto-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde Porto | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "Porto Saúde: plano de saúde empresarial com boa presença no mercado. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"InsuranceAgency\",\n  \"name\": \"Liberty Saúde Corretora de Seguros\",\n  \"alternateName\": \"Liberty Saúde\",\n  \"description\": \"Corretora especializada em planos de saúde Porto Saúde, empresarial e individual. Cotação gratuita comparando as principais operadoras do mercado.\",\n  \"url\": \"https://libertysaude.com.br/pages/porto-saude-landing.html\",\n  \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n  \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n  \"priceRange\": \"$$\",\n  \"telephone\": \"+55-11-98915-2642\",\n  \"email\": \"comercial@libertysaude.com.br\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressCountry\": \"BR\",\n    \"addressRegion\": \"SP\",\n    \"addressLocality\": \"São Paulo\"\n  },\n  \"areaServed\": [\n    {\n      \"@type\": \"Country\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"openingHours\": [\n    \"Mo-Fr 08:00-18:00\",\n    \"Sa 09:00-13:00\"\n  ],\n  \"makesOffer\": [\n    {\n      \"@type\": \"Offer\",\n      \"name\": \"Plano de Saúde Porto Saúde\",\n      \"description\": \"Plano de saúde Porto Saúde empresarial e individual, com cotação comparativa gratuita.\",\n      \"category\": \"Health Insurance\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quanto custa o plano Porto Saúde?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O valor varia conforme idade, região e número de vidas na contratação empresarial. Fazemos uma cotação gratuita comparando o Porto Saúde com outras operadoras.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"O Porto Saúde é indicado para qual tipo de empresa?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O Porto Saúde vem consolidando presença especialmente no segmento empresarial, sendo uma alternativa mais recente no mercado com condições competitivas.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Como contratar o plano Porto Saúde com desconto?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Contratações via CNPJ, a partir de poucas vidas, costumam ter condições melhores. Verificamos se sua empresa se qualifica para desconto coletivo.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Porto Saúde atende pessoa física?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O foco principal do Porto Saúde é o segmento empresarial. Consulte-nos para confirmar a disponibilidade de planos individuais na sua região.\"\n      }\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Início\",\n      \"item\": \"https://libertysaude.com.br/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Plano de Saúde Porto Saúde\",\n      \"item\": \"https://libertysaude.com.br/pages/porto-saude-landing.html\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "porto.css"
+    ]
+  },
+  {
+    "id": "sulamerica-saude-landing",
+    "path": "/pages/sulamerica-saude-landing.html",
+    "component": "SulamericaSaudeLanding",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "UTF-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1.0"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Plano de Saúde SulAmérica | Empresarial e Individual - Cotação Grátis"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "SulAmérica Saúde: tradição no mercado, com boa relação entre custo e abrangência de rede. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "keywords",
+          "content": "plano de saude sulamerica, sulamerica saude, plano sulamerica empresarial, plano sulamerica individual, quanto custa o plano sulamerica"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "author",
+          "content": "Liberty Saúde Corretora de Seguros"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/pages/sulamerica-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:type",
+          "content": "website"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:locale",
+          "content": "pt_BR"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:site_name",
+          "content": "Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:title",
+          "content": "Plano de Saúde SulAmérica | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:description",
+          "content": "SulAmérica Saúde: tradição no mercado, com boa relação entre custo e abrangência de rede. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:url",
+          "content": "https://libertysaude.com.br/pages/sulamerica-saude-landing.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:title",
+          "content": "Plano de Saúde SulAmérica | Liberty Saúde"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:description",
+          "content": "SulAmérica Saúde: tradição no mercado, com boa relação entre custo e abrangência de rede. Compare com outras operadoras e peça sua cotação gratuita com a Liberty Saúde."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "twitter:image",
+          "content": "https://libertysaude.com.br/assets/images/og-image.jpg"
+        },
+        "text": ""
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"InsuranceAgency\",\n  \"name\": \"Liberty Saúde Corretora de Seguros\",\n  \"alternateName\": \"Liberty Saúde\",\n  \"description\": \"Corretora especializada em planos de saúde SulAmérica, empresarial e individual. Cotação gratuita comparando as principais operadoras do mercado.\",\n  \"url\": \"https://libertysaude.com.br/pages/sulamerica-saude-landing.html\",\n  \"logo\": \"https://libertysaude.com.br/assets/images/image-c0cd7413fee8.png\",\n  \"image\": \"https://libertysaude.com.br/assets/images/og-image.jpg\",\n  \"priceRange\": \"$$\",\n  \"telephone\": \"+55-11-98915-2642\",\n  \"email\": \"comercial@libertysaude.com.br\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"addressCountry\": \"BR\",\n    \"addressRegion\": \"SP\",\n    \"addressLocality\": \"São Paulo\"\n  },\n  \"areaServed\": [\n    {\n      \"@type\": \"Country\",\n      \"name\": \"Brasil\"\n    }\n  ],\n  \"openingHours\": [\n    \"Mo-Fr 08:00-18:00\",\n    \"Sa 09:00-13:00\"\n  ],\n  \"makesOffer\": [\n    {\n      \"@type\": \"Offer\",\n      \"name\": \"Plano de Saúde SulAmérica\",\n      \"description\": \"Plano de saúde SulAmérica empresarial e individual, com cotação comparativa gratuita.\",\n      \"category\": \"Health Insurance\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Quanto custa o plano SulAmérica Saúde?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"O valor varia conforme idade, região, rede escolhida e tipo de contratação. Fazemos uma cotação gratuita comparando a SulAmérica com outras operadoras.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"A SulAmérica Saúde atende em todo o Brasil?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Sim, a SulAmérica é uma operadora tradicional com presença em diversas regiões do país. Confirmamos a cobertura na sua região durante a cotação.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"Como contratar o plano SulAmérica com desconto?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Contratações empresariais via CNPJ costumam ter mensalidades menores que planos individuais equivalentes.\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"SulAmérica individual ou empresarial: qual escolher?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"Com CNPJ, o plano empresarial costuma ser mais econômico. Sem CNPJ, o plano individual segue as regras de carência e reajuste definidas pela ANS.\"\n      }\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "script",
+        "attrs": {
+          "type": "application/ld+json"
+        },
+        "text": "\n    {\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"BreadcrumbList\",\n  \"itemListElement\": [\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 1,\n      \"name\": \"Início\",\n      \"item\": \"https://libertysaude.com.br/\"\n    },\n    {\n      \"@type\": \"ListItem\",\n      \"position\": 2,\n      \"name\": \"Plano de Saúde SulAmérica\",\n      \"item\": \"https://libertysaude.com.br/pages/sulamerica-saude-landing.html\"\n    }\n  ]\n}\n  "
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/png",
+          "sizes": "192x192",
+          "href": "/assets/images/android-chrome-192x192.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "manifest",
+          "href": "/assets/images/site.webmanifest"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "sulamerica.css"
+    ]
+  },
+  {
+    "id": "politica-de-privacidade",
+    "path": "/politica-de-privacidade.html",
+    "component": "PoliticaDePrivacidade",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "utf-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Política de Privacidade | Liberty Saúde"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Política de Privacidade da Liberty Saúde Corretora de Seguros."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/politica-de-privacidade.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "style.css",
+      "politica-de-privacidade-inline.css"
+    ]
+  },
+  {
+    "id": "termos-de-servico",
+    "path": "/termos-de-servico.html",
+    "component": "TermosDeServico",
+    "tags": [
+      {
+        "tag": "meta",
+        "attrs": {
+          "charset": "utf-8"
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        "text": ""
+      },
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Termos de Serviço | Liberty Saúde"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Termos de Serviço da Liberty Saúde Corretora de Seguros."
+        },
+        "text": ""
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/termos-de-servico.html"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "icon",
+          "type": "image/x-icon",
+          "href": "/favicon.ico"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "apple-touch-icon",
+          "href": "/assets/images/apple-touch-icon.png"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.googleapis.com"
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "preconnect",
+          "href": "https://fonts.gstatic.com",
+          "crossorigin": ""
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "href": "https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Work+Sans:wght@400;500;600;700&display=swap",
+          "rel": "stylesheet"
+        },
+        "text": ""
+      }
+    ],
+    "styles": [
+      "style.css",
+      "termos-de-servico-inline.css"
+    ]
+  },
+  {
+    "id": "cotacao",
+    "path": "/cotacao.html",
+    "component": "Cotacao",
+    "styles": [
+      "cotacao.css"
+    ],
+    "tags": [
+      {
+        "tag": "title",
+        "attrs": {},
+        "text": "Sua cotação | Liberty Saúde"
+      },
+      {
+        "tag": "meta",
+        "attrs": {
+          "name": "description",
+          "content": "Solicite sua cotação de plano de saúde com a Liberty Saúde. Uma pergunta de cada vez, de forma simples e gratuita."
+        },
+        "text": ""
+      },
+      {
+        "tag": "link",
+        "attrs": {
+          "rel": "canonical",
+          "href": "https://libertysaude.com.br/cotacao.html"
+        },
+        "text": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+import Home from './pages/Home.jsx';
+import AliceSaudeLanding from './pages/AliceSaudeLanding.jsx';
+import AmilSaudeLanding from './pages/AmilSaudeLanding.jsx';
+import BradescoSaudeLanding from './pages/BradescoSaudeLanding.jsx';
+import ComparativoPlanosDeSaude from './pages/ComparativoPlanosDeSaude.jsx';
+import HapvidaSaudeLanding from './pages/HapvidaSaudeLanding.jsx';
+import PlanoDeSaudeEmpresarial from './pages/PlanoDeSaudeEmpresarial.jsx';
+import PlanoDeSaudeIndividual from './pages/PlanoDeSaudeIndividual.jsx';
+import PortoSaudeLanding from './pages/PortoSaudeLanding.jsx';
+import SulamericaSaudeLanding from './pages/SulamericaSaudeLanding.jsx';
+import PoliticaDePrivacidade from './pages/PoliticaDePrivacidade.jsx';
+import TermosDeServico from './pages/TermosDeServico.jsx';
+import Cotacao from './cotacao.jsx';
+export const pages = { "home": Home, "alice-saude-landing": AliceSaudeLanding, "amil-saude-landing": AmilSaudeLanding, "bradesco-saude-landing": BradescoSaudeLanding, "comparativo-planos-de-saude": ComparativoPlanosDeSaude, "hapvida-saude-landing": HapvidaSaudeLanding, "plano-de-saude-empresarial": PlanoDeSaudeEmpresarial, "plano-de-saude-individual": PlanoDeSaudeIndividual, "porto-saude-landing": PortoSaudeLanding, "sulamerica-saude-landing": SulamericaSaudeLanding, "politica-de-privacidade": PoliticaDePrivacidade, "termos-de-servico": TermosDeServico, "cotacao": Cotacao };
