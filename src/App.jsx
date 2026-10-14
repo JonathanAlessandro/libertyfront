@@ -2,7 +2,6 @@ import React, { useEffect, useLayoutEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import routes from './routes.json';
 import { pages } from './pages.jsx';
-import { ChatProvider } from './components/ChatWidget.jsx';
 
 export function findRoute(pathname) {
   return routes.find(route => route.path === (pathname === '/index.html' ? '/' : pathname));
@@ -38,5 +37,5 @@ export default function App() {
   const location = useLocation();
   const route = findRoute(location.pathname);
   const Page = route && pages[route.id];
-  return <><RouteEffects route={route}/>{Page ? <ChatProvider key={route.id}><Page/></ChatProvider> : <main className="not-found"><h1>Página não encontrada</h1><p>O endereço pode ter mudado.</p><Link to="/">Voltar ao início</Link></main>}</>;
+  return <><RouteEffects route={route}/>{Page ? <Page key={route.id}/> : <main className="not-found"><h1>Página não encontrada</h1><p>O endereço pode ter mudado.</p><Link to="/">Voltar ao início</Link></main>}</>;
 }

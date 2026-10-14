@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Navigation from '../components/Navigation.jsx';
-import ChatWidget from '../components/ChatWidget.jsx';
 
 export default function PoliticaDePrivacidade(){return <>
 <header className={"top-block"} id={"topo"}>

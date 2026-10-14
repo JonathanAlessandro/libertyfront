@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Navigation from '../components/Navigation.jsx';
-import ChatWidget from '../components/ChatWidget.jsx';
 
 export default function HapvidaSaudeLanding(){return <>
 <Navigation className={"nav"}>
@@ -348,44 +347,7 @@ export default function HapvidaSaudeLanding(){return <>
 <path d={"M16.02 3C9.4 3 4 8.4 4 15.02c0 2.35.66 4.55 1.8 6.43L4 29l7.73-1.76a11.98 11.98 0 0 0 4.29.78h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm7.03 17.2c-.3.85-1.5 1.55-2.45 1.75-.65.14-1.5.25-4.36-.94-3.65-1.51-6-5.2-6.18-5.44-.18-.24-1.48-1.97-1.48-3.75 0-1.78.93-2.65 1.26-3.01.33-.36.72-.45.96-.45.24 0 .48 0 .69.01.22.01.52-.08.81.62.3.72 1.02 2.5 1.11 2.68.09.18.15.39.03.63-.12.24-.18.39-.36.6-.18.21-.38.47-.54.63-.18.18-.37.38-.16.74.21.36.94 1.55 2.02 2.51 1.39 1.24 2.56 1.62 2.92 1.8.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.1.99 2.46 1.17.36.18.6.27.69.42.09.15.09.87-.21 1.72z"}></path>
 </svg>
 </a>
-<ChatWidget className={"chat-widget"} id={"chatWidget"}>
-<div className={"chat-widget-header"}>
-<div className={"chat-widget-avatar"}>
-<svg viewBox={"0 0 24 24"} fill={"none"} strokeWidth={"2"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<circle cx={"12"} cy={"8"} r={"4"}></circle>
-<path d={"M4 21c0-4 3.6-7 8-7s8 3 8 7"}></path>
-</svg>
-</div>
-<div>
-<div className={"chat-widget-name"}>{"Ana · Liberty Saúde"}</div>
-<div className={"chat-widget-status"}>{"Online agora"}</div>
-</div>
-<button className={"chat-widget-close"} id={"chatCloseBtn"} aria-label={"Fechar chat"}>{"✕"}</button>
-</div>
-<div className={"chat-widget-body"} id={"chatBody"}>
-<div className={"chat-bubble-row"}>
-<div className={"chat-bubble-avatar"}><svg viewBox={"0 0 24 24"} fill={"none"} strokeWidth={"2"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<circle cx={"12"} cy={"8"} r={"4"}></circle>
-<path d={"M4 21c0-4 3.6-7 8-7s8 3 8 7"}></path>
-</svg></div>
-<div className={"chat-bubble"}>{"Oi, tudo bem? 😊"}</div>
-</div>
-<div className={"chat-bubble-row delay1"}>
-<div className={"chat-bubble-avatar"}><svg viewBox={"0 0 24 24"} fill={"none"} strokeWidth={"2"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<circle cx={"12"} cy={"8"} r={"4"}></circle>
-<path d={"M4 21c0-4 3.6-7 8-7s8 3 8 7"}></path>
-</svg></div>
-<div className={"chat-bubble"}>{"Quer receber uma cotação do plano "}<strong>{"Hapvida"}</strong>{" agora mesmo, direto no\n          WhatsApp?"}</div>
-</div>
-<div className={"chat-cta-wrap"}>
-<button className={"chat-cta-btn"} id={"chatCtaBtn"}>{"\n          SIM, EU QUERO!\n          "}<svg viewBox={"0 0 24 24"} fill={"none"} stroke={"#fff"} strokeWidth={"2.4"} strokeLinecap={"round"} strokeLinejoin={"round"} width={"18"} height={"18"}>
-<path d={"M5 12h14M13 6l6 6-6 6"}></path>
-</svg>
-</button>
-<p className={"chat-fineprint"}>{"Não vendemos seus dados. Veja nossa "}<Link to={"/politica-de-privacidade.html"}>{"Política de Privacidade"}</Link>{"."}</p>
-</div>
-</div>
-</ChatWidget>
+
 
 
 </>;}

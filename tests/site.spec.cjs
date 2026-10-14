@@ -119,12 +119,15 @@ test('formulário sem plano, hospital ou CNPJ no celular', async ({ page }) => {
   expect(payload.hospital).toBe('');expect(payload.noCnpj).toBe(true);expect(payload.cnpj).toBeNull();expect(payload.plano_atual).toBe('não possuo plano');
 });
 
-test('chat abre e fecha após navegação e página inexistente retorna 404', async ({ page, request }) => {
+test('WhatsApp abre diretamente sem caixa de atendimento e página inexistente retorna 404', async ({ page, request }) => {
+  await page.context().route('https://wa.me/**', route => route.fulfill({status:200,contentType:'text/html',body:'WhatsApp de teste'}));
   await page.goto('/pages/amil-saude-landing.html');
-  await expect(page.locator('#chatWidget')).toHaveClass(/is-open/, { timeout: 7000 });
-  await page.getByRole('button',{name:'Fechar chat'}).click();
-  await expect(page.locator('#chatWidget')).not.toHaveClass(/is-open/);
-  await page.locator('#waFloatBtn').click();await expect(page.locator('#chatWidget')).toHaveClass(/is-open/);
+  await expect(page.locator('#chatWidget')).toHaveCount(0);
+  const popupPromise = page.waitForEvent('popup');
+  await page.locator('#waFloatBtn').click();
+  const popup = await popupPromise;
+  await expect(popup).toHaveURL(/^https:\/\/wa\.me\//);
+  await popup.close();
   const response=await request.get('/pagina-que-nao-existe');expect(response.status()).toBe(404);
   await page.goto('/pagina-que-nao-existe');await expect(page.getByRole('heading',{name:'Página não encontrada'})).toBeVisible();
 });

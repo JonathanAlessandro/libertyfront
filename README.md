@@ -17,7 +17,7 @@ Abra `http://localhost:8080`. O comando gera o site, inicia o servidor local e r
 
 - `src/pages/`: componentes das páginas inicial, planos, operadoras e documentos legais.
 - `src/cotacao.jsx`: formulário em etapas, com nome e telefone obrigatórios no final.
-- `src/components/`: navegação, cabeçalho, rodapé e comportamento do chat.
+- `src/components/`: navegação, cabeçalho e rodapé.
 - `src/routes.json`: URLs, metadados SEO, dados estruturados e estilos de cada página.
 - `src/styles/`: estilos existentes; o build os isola por página para evitar conflitos durante a navegação.
 - `public/`: imagens, ícones, manifesto e sitemap.
@@ -51,4 +51,4 @@ O backend em `Documents/liberty` foi ajustado para aceitar e-mail opcional e exi
 npm test
 ```
 
-Os testes Playwright usam o Microsoft Edge instalado. Em outro ambiente, instale-o com `npx playwright install msedge`. Os testes verificam as 13 URLs, HTML pré-renderizado, hidratação, navegação sem recarga, metadados, estilos, menu móvel, chat, 404 e os caminhos do formulário. As requisições de cadastro são interceptadas; os testes não criam clientes reais.
+Os testes Playwright usam o Microsoft Edge instalado. Em outro ambiente, instale-o com `npx playwright install msedge`. Os testes verificam as 13 URLs, HTML pré-renderizado, hidratação, navegação sem recarga, metadados, estilos, menu móvel, acesso direto ao WhatsApp, 404 e os caminhos do formulário. As requisições de cadastro são interceptadas; os testes não criam clientes reais.

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import Navigation from '../components/Navigation.jsx';
-import ChatWidget from '../components/ChatWidget.jsx';
 
 export default function Home(){return <>
 <div className={"top-block"} id={"topo"}>
@@ -189,44 +188,7 @@ export default function Home(){return <>
 <div className={"form-card"}><h3>{"Sua cotação, uma pergunta de cada vez"}</h3><p>{"Conte o que você precisa e receba uma proposta personalizada."}</p><Link className={"btn-primary"} to={"/cotacao.html"}>{"Começar minha cotação"}</Link></div>
 </div>
 </section>
-<ChatWidget className={"chat-widget"} id={"chatWidget"}>
-<div className={"chat-widget-header"}>
-<div className={"chat-widget-avatar"}>
-<svg viewBox={"0 0 24 24"} fill={"none"} strokeWidth={"2"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<circle cx={"12"} cy={"8"} r={"4"}></circle>
-<path d={"M4 21c0-4 3.6-7 8-7s8 3 8 7"}></path>
-</svg>
-</div>
-<div>
-<div className={"chat-widget-name"}>{"Ana · Liberty Saúde"}</div>
-<div className={"chat-widget-status"}>{"Online agora"}</div>
-</div>
-<button className={"chat-widget-close"} id={"chatCloseBtn"} aria-label={"Fechar chat"}>{"✕"}</button>
-</div>
-<div className={"chat-widget-body"} id={"chatBody"}>
-<div className={"chat-bubble-row"}>
-<div className={"chat-bubble-avatar"}><svg viewBox={"0 0 24 24"} fill={"none"} strokeWidth={"2"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<circle cx={"12"} cy={"8"} r={"4"}></circle>
-<path d={"M4 21c0-4 3.6-7 8-7s8 3 8 7"}></path>
-</svg></div>
-<div className={"chat-bubble"}>{"Oi, tudo bem? 😊"}</div>
-</div>
-<div className={"chat-bubble-row delay1"}>
-<div className={"chat-bubble-avatar"}><svg viewBox={"0 0 24 24"} fill={"none"} strokeWidth={"2"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<circle cx={"12"} cy={"8"} r={"4"}></circle>
-<path d={"M4 21c0-4 3.6-7 8-7s8 3 8 7"}></path>
-</svg></div>
-<div className={"chat-bubble"}>{"Quer receber uma cotação do plano agora mesmo,\n                    direto no\n                    WhatsApp?"}</div>
-</div>
-<div className={"chat-cta-wrap"}>
-<button className={"chat-cta-btn"} id={"chatCtaBtn"}>{"\n                    SIM, EU QUERO!\n                    "}<svg viewBox={"0 0 24 24"} fill={"none"} stroke={"#fff"} strokeWidth={"2.4"} strokeLinecap={"round"} strokeLinejoin={"round"}>
-<path d={"M5 12h14M13 6l6 6-6 6"}></path>
-</svg>
-</button>
-<p className={"chat-fineprint"}>{"Não vendemos seus dados. Veja nossa "}<Link to={"/politica-de-privacidade.html"}>{"Política de Privacidade"}</Link>{"."}</p>
-</div>
-</div>
-</ChatWidget>
+
 <footer className={"footer"}>
 <div className={"footer-top"}>
 <img alt={"Liberty Saúde Corretora de Planos de Saúde - Sua corretora de seguros saúde"} className={"footer-logo"} src={"/assets/images/image-c0cd7413fee8.webp"}/>
