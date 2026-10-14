@@ -71,19 +71,37 @@ test('formulário preserva respostas e trata validação, erro e sucesso sem rec
   const next = () => page.getByRole('button', {name:'Continuar →',exact:true}).click();
   await expect(page.getByRole('button', {name:'Continuar →',exact:true})).toHaveCount(0);
   await page.getByRole('button', {name:'Sim',exact:true}).click();
+  await expect(page.getByRole('heading', {name:'Qual plano de saúde?',exact:true})).toBeVisible();
+  await next();
+  await expect(page.getByRole('alert')).toContainText('Informe qual plano');
+  await page.getByLabel('Plano de saúde atual').fill('Amil');await next();
   await page.getByLabel('Hospital de preferência').fill('São Luiz');await next();
+  await expect(page.getByRole('heading', {name:'Quais são as idades para cotação?'})).toBeVisible();
   await page.getByLabel('Idades dos beneficiários').fill('35, texto');await next();
   await expect(page.getByRole('alert')).toContainText('Informe as idades');
   await page.getByLabel('Idades dos beneficiários').fill('35, 0');await next();
   await page.getByRole('button', {name:'Sim',exact:true}).click();
-  await page.getByLabel('CNPJ (opcional)', {exact:true}).fill('11222333000181');await next();
+  const documentInput = page.getByLabel('CNPJ (opcional)', {exact:true});
+  await documentInput.pressSequentially('11222333000181');
+  await expect(documentInput).toHaveValue('11.222.333/0001-81');
+  await documentInput.fill('11.222.333/0001-81');
+  await expect(documentInput).toHaveValue('11.222.333/0001-81');await next();
   await page.getByRole('button', {name:'Voltar'}).click();
-  await expect(page.getByLabel('CNPJ (opcional)', {exact:true})).toHaveValue('11222333000181');await next();
+  await expect(page.getByLabel('CNPJ (opcional)', {exact:true})).toHaveValue('11.222.333/0001-81');await next();
   await page.getByRole('button', {name:'Solicitar minha cotação'}).click();
   await expect(page.getByRole('alert')).toContainText('Informe seu nome');
   await page.getByLabel('Nome completo').fill('Pessoa Teste');
   await expect(page.getByRole('checkbox')).toHaveCount(0);
   await page.getByLabel('Telefone com DDD').fill('11999998888');
+  await expect(page.getByLabel('E-mail')).toHaveAttribute('required');
+  await page.getByRole('button', {name:'Solicitar minha cotação'}).click();
+  await expect(page.getByRole('alert')).toContainText('Informe seu e-mail.');
+  expect(count).toBe(0);
+  await page.getByLabel('E-mail').fill('invalido');
+  await page.getByRole('button', {name:'Solicitar minha cotação'}).click();
+  await expect(page.getByRole('alert')).toContainText('Informe um e-mail válido.');
+  expect(count).toBe(0);
+  await page.getByLabel('E-mail').fill('pessoa@example.com');
   await page.getByRole('button', {name:'Solicitar minha cotação'}).click();
   await expect(page.getByRole('alert')).toContainText('Tente novamente');
   await expect(page.getByLabel('Nome completo')).toHaveValue('Pessoa Teste');
@@ -98,7 +116,8 @@ test('formulário preserva respostas e trata validação, erro e sucesso sem rec
   expect(new URL(await whatsapp.getAttribute('href')).searchParams.get('text')).toBe('Preenchi seu formulário solicitando uma cotação e gostaria de saber mais.');
   await expect(page.getByRole('link', {name:'Voltar ao início'})).toBeVisible();
   expect(payload.aceitaEmails).toBe(false);expect(payload.aceitaWhatsapp).toBe(false);
-  expect(payload.plano_atual).toBe('possui plano de saúde');expect(count).toBe(2);expect(payload.email).toBe('');expect(payload.telefone).toBe('11999998888');expect(payload.idades).toEqual([35,0]);
+  expect(payload.cnpj).toBe('11222333000181');
+  expect(payload.plano_atual).toBe('Amil');expect(count).toBe(2);expect(payload.email).toBe('pessoa@example.com');expect(payload.telefone).toBe('11999998888');expect(payload.idades).toEqual([35,0]);
 });
 
 test('formulário sem plano, hospital ou CNPJ no celular', async ({ page }) => {
@@ -113,6 +132,7 @@ test('formulário sem plano, hospital ou CNPJ no celular', async ({ page }) => {
   await page.getByLabel('Idades dos beneficiários').fill('28');await next();
   await page.getByRole('button',{name:'Não',exact:true}).click();
   await page.getByLabel('Nome completo').fill('Pessoa Teste');await page.getByLabel('Telefone com DDD').fill('1133334444');
+  await page.getByLabel('E-mail').fill('pessoa@example.com');
   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);
   await page.getByRole('button',{name:'Solicitar minha cotação'}).click();
   await expect(page.getByRole('heading',{name:'Sua solicitação foi enviada!'})).toBeVisible();
@@ -135,20 +155,19 @@ test('WhatsApp abre diretamente sem caixa de atendimento e página inexistente r
 test('seleções avançam uma vez, permitem mudar a resposta ao voltar e respeitam movimento reduzido', async ({ page }) => {
   await page.goto('/cotacao.html');
   await page.getByRole('button', {name:'Sim',exact:true}).evaluate(button => { button.click(); button.click(); });
-  await expect(page.getByRole('heading', {name:'Qual hospital você prefere?'})).toBeVisible();
+  await expect(page.getByRole('heading', {name:'Qual plano de saúde?',exact:true})).toBeVisible();
   await expect(page.locator('form')).toHaveAttribute('aria-busy', 'false');
   await page.getByRole('button', {name:'Voltar'}).click();
   await expect(page.getByRole('heading', {name:'Você possui plano de saúde?'})).toBeVisible();
   await page.getByRole('button', {name:'Não',exact:true}).click();
   await expect(page.getByRole('heading', {name:'Qual hospital você prefere?'})).toBeVisible();
-  await expect(page.getByLabel('Plano atual')).toHaveCount(0);
+  await expect(page.getByLabel('Plano de saúde atual')).toHaveCount(0);
   await page.emulateMedia({reducedMotion:'reduce'});
   expect(await page.locator('form').evaluate(form => getComputedStyle(form).animationName)).toBe('none');
   await page.getByRole('button', {name:'Voltar'}).click();
   await expect(page.getByRole('heading', {name:'Você possui plano de saúde?'})).toBeVisible();
   await page.getByRole('button', {name:'Sim',exact:true}).click();
-  await expect(page.getByLabel('Hospital de preferência')).toBeVisible();
-  await expect(page.getByLabel('Plano atual')).toHaveCount(0);
+  await expect(page.getByLabel('Plano de saúde atual')).toBeVisible();
 });
 
 for (const clearIncomplete of [false, true]) {
@@ -178,6 +197,7 @@ for (const clearIncomplete of [false, true]) {
     } else await page.getByRole('button',{name:'Continuar →',exact:true}).click();
     await page.getByLabel('Nome completo').fill('Pessoa Teste');
     await page.getByLabel('Telefone com DDD').fill('11999998888');
+  await page.getByLabel('E-mail').fill('pessoa@example.com');
     await page.getByRole('button',{name:'Solicitar minha cotação'}).click();
     await expect(page.getByRole('heading',{name:'Sua solicitação foi enviada!'})).toBeVisible();
     expect(payload.cnpj).toBeNull();

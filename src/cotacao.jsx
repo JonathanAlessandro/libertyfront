@@ -1,8 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const initial = { possuiPlano: '', hospital: '', idades: '', possuiCnpj: '', cnpj: '', nome: '', telefone: '', email: '' };
+const initial = { possuiPlano: '', plano_atual: '', hospital: '', idades: '', possuiCnpj: '', cnpj: '', nome: '', telefone: '', email: '' };
 const digits = value => value.replace(/\D/g, '');
+const formatCnpj = value => {
+  const numbers = digits(value).slice(0, 14);
+  return numbers.slice(0, 2)
+    + (numbers.length > 2 ? '.' + numbers.slice(2, 5) : '')
+    + (numbers.length > 5 ? '.' + numbers.slice(5, 8) : '')
+    + (numbers.length > 8 ? '/' + numbers.slice(8, 12) : '')
+    + (numbers.length > 12 ? '-' + numbers.slice(12) : '');
+};
 const phone = value => {
   const n = digits(value).slice(0, 11);
   if (n.length <= 2) return n;
@@ -21,9 +29,9 @@ export default function Cotacao() {
   const locked = useRef(false);
   const transitionLock = useRef(false);
   const transitionTimer = useRef(null);
-  const steps = ['plano', 'hospital', 'idades', 'cnpj', ...(data.possuiCnpj === 'sim' ? ['documento'] : []), 'contato'];
+  const steps = ['plano', ...(data.possuiPlano === 'sim' ? ['operadora'] : []), 'hospital', 'idades', 'cnpj', ...(data.possuiCnpj === 'sim' ? ['documento'] : []), 'contato'];
   const current = steps[step];
-  const titles = { plano: 'Você possui plano de saúde?', hospital: 'Qual hospital você prefere?', idades: 'Quais são as idades de quem vai usar?', cnpj: 'Você possui CNPJ?', documento: 'Gostaria de informar o CNPJ?', contato: 'Como podemos falar com você?' };
+  const titles = { plano: 'Você possui plano de saúde?', operadora: 'Qual plano de saúde?', hospital: 'Qual hospital você prefere?', idades: 'Quais são as idades para cotação?', cnpj: 'Você possui CNPJ?', documento: 'Gostaria de informar o CNPJ?', contato: 'Como podemos falar com você?' };
   useEffect(() => { heading.current?.focus(); }, [step, success]);
   useEffect(() => () => clearTimeout(transitionTimer.current), []);
   useEffect(() => {
@@ -49,13 +57,15 @@ export default function Cotacao() {
   const input = (name, label, props = {}) => <div className="field"><label htmlFor={name}>{label}</label><input id={name} name={name} value={data[name]} onChange={event => update(name, event.target.value)} {...props}/></div>;
   function validate() {
     if (current === 'plano' && !data.possuiPlano || current === 'cnpj' && !data.possuiCnpj) return 'Selecione uma opção para continuar.';
+    if (current === 'operadora' && !data.plano_atual.trim()) return 'Informe qual plano de saúde você possui.';
     if (current === 'idades' && !/^\s*\d{1,3}(\s*,\s*\d{1,3})*\s*$/.test(data.idades)) return 'Informe as idades separadas por vírgula, como 35, 32, 8.';
     if (current === 'idades' && data.idades.split(',').some(age => Number(age) > 120)) return 'Informe idades entre 0 e 120 anos.';
     if (current === 'documento' && data.cnpj.trim() && digits(data.cnpj).length !== 14) return 'Informe os 14 números do CNPJ.';
     if (current === 'contato') {
       if (!data.nome.trim()) return 'Informe seu nome.';
       if (!/^[1-9]{2}\d{8,9}$/.test(digits(data.telefone))) return 'Informe um telefone válido com DDD.';
-      if (data.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(data.email.trim())) return 'Informe um e-mail válido ou deixe o campo vazio.';
+      if (!data.email.trim()) return 'Informe seu e-mail.';
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(data.email.trim())) return 'Informe um e-mail válido.';
     }
     return '';
   }
@@ -70,7 +80,7 @@ export default function Cotacao() {
     try {
       const response = await fetch('https://api.libertysaude.com.br/api/clientes', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ nome: data.nome.trim(), telefone: digits(data.telefone), email: data.email.trim(), cnpj: data.possuiCnpj === 'sim' && data.cnpj.trim() ? digits(data.cnpj) : null, noCnpj: data.possuiCnpj === 'nao', hospital: data.hospital.trim(), plano_atual: data.possuiPlano === 'sim' ? 'possui plano de saúde' : 'não possuo plano', idades: data.idades.split(',').map(Number), aceitaEmails: false, aceitaWhatsapp: false, versaoPoliticaPrivacidade: '2026-09-23' })
+        body: JSON.stringify({ nome: data.nome.trim(), telefone: digits(data.telefone), email: data.email.trim(), cnpj: data.possuiCnpj === 'sim' && data.cnpj.trim() ? digits(data.cnpj) : null, noCnpj: data.possuiCnpj === 'nao', hospital: data.hospital.trim(), plano_atual: data.possuiPlano === 'sim' ? data.plano_atual.trim() : 'não possuo plano', idades: data.idades.split(',').map(Number), aceitaEmails: false, aceitaWhatsapp: false, versaoPoliticaPrivacidade: '2026-09-23' })
       });
       const result = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(result.errors?.join(' ') || result.message || 'Não foi possível enviar sua cotação. Tente novamente.');
@@ -86,11 +96,12 @@ export default function Cotacao() {
         <p className="description">{current === 'documento' ? 'Com o CNPJ, podemos preparar uma cotação mais detalhada para sua empresa. Se preferir, continue sem informar.' : current === 'contato' ? 'Falta pouco! Informe seus dados para receber uma cotação personalizada.' : 'Uma pergunta de cada vez, para entender o que faz sentido para você.'}</p>
         <fieldset disabled={sending || transitioning}>
           {current === 'plano' && choice('possuiPlano')}
+          {current === 'operadora' && input('plano_atual', 'Plano de saúde atual', { placeholder: 'Ex.: Amil, Unimed, Bradesco Saúde', required: true, maxLength: 50 })}
           {current === 'hospital' && input('hospital', 'Hospital de preferência (opcional)', { placeholder: 'Ex.: São Luiz, Albert Einstein', maxLength: 200 })}
           {current === 'idades' && <>{input('idades', 'Idades dos beneficiários', { placeholder: 'Ex.: 35, 32, 8', required: true, inputMode: 'text', 'aria-describedby': 'age-help' })}<p id="age-help" className="hint">Inclua a idade de cada pessoa, separada por vírgula. Para bebês com menos de 1 ano, use 0.</p></>}
           {current === 'cnpj' && choice('possuiCnpj')}
-          {current === 'documento' && input('cnpj', 'CNPJ (opcional)', { placeholder: 'Digite os 14 números', inputMode: 'numeric', maxLength: 18 })}
-          {current === 'contato' && <>{input('nome', 'Nome completo *', { autoComplete: 'name', required: true, maxLength: 150 })}{input('telefone', 'Telefone com DDD *', { type: 'tel', autoComplete: 'tel', placeholder: '(11) 99999-9999', required: true, onChange: e => update('telefone', phone(e.target.value)) })}{input('email', 'E-mail (opcional)', { type: 'email', autoComplete: 'email', placeholder: 'voce@email.com', maxLength: 150 })}<p className="privacy">Usamos seus dados para responder à cotação e os compartilhamos quando necessário com operadoras, seguradoras e fornecedores. Não vendemos seus dados. <a href="/politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p></>}
+          {current === 'documento' && input('cnpj', 'CNPJ (opcional)', { placeholder: '00.000.000/0000-00', inputMode: 'numeric', maxLength: 18, onChange: event => update('cnpj', formatCnpj(event.target.value)) })}
+          {current === 'contato' && <>{input('nome', 'Nome completo *', { autoComplete: 'name', required: true, maxLength: 150 })}{input('telefone', 'Telefone com DDD *', { type: 'tel', autoComplete: 'tel', placeholder: '(11) 99999-9999', required: true, onChange: e => update('telefone', phone(e.target.value)) })}{input('email', 'E-mail *', { type: 'email', required: true, autoComplete: 'email', placeholder: 'voce@email.com', maxLength: 150 })}<p className="privacy">Usamos seus dados para responder à cotação e os compartilhamos quando necessário com operadoras, seguradoras e fornecedores. Não vendemos seus dados. <a href="/politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</p></>}
         </fieldset>
         <div role="alert" className="error">{error}</div><div className="actions">{step > 0 && <button type="button" className="back" disabled={sending || transitioning} onClick={() => moveStep(-1)}>← Voltar</button>}{!['plano', 'cnpj'].includes(current) && <button className="primary" disabled={sending || transitioning} type="submit">{sending ? 'Enviando…' : current === 'contato' ? 'Solicitar minha cotação' : 'Continuar →'}</button>}</div>
       </form></>}

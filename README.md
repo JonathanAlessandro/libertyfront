@@ -39,11 +39,11 @@ O build inclui conteúdo, título, descrição, canonical e dados estruturados n
 
 ## Formulário e API
 
-Fluxo: possui plano → hospital opcional → idades → possui CNPJ → CNPJ opcional (se possui) → contato. Avançar e voltar preserva as respostas em memória, sem recarregar. Nome e telefone com DDD são obrigatórios; e-mail é opcional. Não há caixas de autorização de WhatsApp ou ofertas por e-mail. Atualizar a página limpa o formulário.
+Fluxo: possui plano → qual plano (se possui) → hospital opcional → idades → possui CNPJ → CNPJ opcional (se possui) → contato. Avançar e voltar preserva as respostas em memória, sem recarregar. Nome, telefone com DDD e e-mail são obrigatórios. Não há caixas de autorização de WhatsApp ou ofertas por e-mail. Atualizar a página limpa o formulário.
 
 O envio continua em `https://api.libertysaude.com.br/api/clientes`, com os campos `nome`, `email`, `telefone`, `cnpj`, `noCnpj`, `hospital`, `plano_atual`, `idades`, `aceitaEmails`, `aceitaWhatsapp` e `versaoPoliticaPrivacidade`.
 
-O backend em `Documents/liberty` foi ajustado para aceitar e-mail opcional e exigir telefone com DDD. Publique e reinicie esse backend antes de disponibilizar o novo formulário: a inicialização torna `CLIENTES.email` anulável, preservando a unicidade dos e-mails preenchidos. O build do front não executa essa alteração no banco.
+O backend em `Documents/liberty` exige e-mail válido e telefone com DDD no cadastro. Publique e reinicie esse backend antes de disponibilizar o novo formulário: a inicialização torna `CLIENTES.email` anulável, preservando a unicidade dos e-mails preenchidos. O build do front não executa essa alteração no banco.
 
 ## Verificação
 
