@@ -58,6 +58,7 @@ export default function Cotacao() {
   function validate() {
     if (current === 'plano' && !data.possuiPlano || current === 'cnpj' && !data.possuiCnpj) return 'Selecione uma opção para continuar.';
     if (current === 'operadora' && !data.plano_atual.trim()) return 'Informe qual plano de saúde você possui.';
+    if (current === 'hospital' && !data.hospital.trim()) return 'Informe um hospital de preferência. Se não tiver, digite “não”.';
     if (current === 'idades' && !/^\s*\d{1,3}(\s*,\s*\d{1,3})*\s*$/.test(data.idades)) return 'Informe as idades separadas por vírgula, como 35, 32, 8.';
     if (current === 'idades' && data.idades.split(',').some(age => Number(age) > 120)) return 'Informe idades entre 0 e 120 anos.';
     if (current === 'documento' && data.cnpj.trim() && digits(data.cnpj).length !== 14) return 'Informe os 14 números do CNPJ.';
@@ -97,7 +98,7 @@ export default function Cotacao() {
         <fieldset disabled={sending || transitioning}>
           {current === 'plano' && choice('possuiPlano')}
           {current === 'operadora' && input('plano_atual', 'Plano de saúde atual', { placeholder: 'Ex.: Amil, Unimed, Bradesco Saúde', required: true, maxLength: 50 })}
-          {current === 'hospital' && input('hospital', 'Hospital de preferência (opcional)', { placeholder: 'Ex.: São Luiz, Albert Einstein', maxLength: 200 })}
+          {current === 'hospital' && <>{input('hospital', 'Hospital de preferência *', { placeholder: 'Ex.: São Luiz, Albert Einstein', maxLength: 200, required: true, 'aria-describedby': 'hospital-help' })}<p id="hospital-help" className="hint">Se não tiver um hospital de preferência, digite “não”.</p></>}
           {current === 'idades' && <>{input('idades', 'Idades dos beneficiários', { placeholder: 'Ex.: 35, 32, 8', required: true, inputMode: 'text', 'aria-describedby': 'age-help' })}<p id="age-help" className="hint">Inclua a idade de cada pessoa, separada por vírgula. Para bebês com menos de 1 ano, use 0.</p></>}
           {current === 'cnpj' && choice('possuiCnpj')}
           {current === 'documento' && input('cnpj', 'CNPJ (opcional)', { placeholder: '00.000.000/0000-00', inputMode: 'numeric', maxLength: 18, onChange: event => update('cnpj', formatCnpj(event.target.value)) })}

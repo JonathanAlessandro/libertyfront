@@ -39,7 +39,7 @@ O build inclui conteúdo, título, descrição, canonical e dados estruturados n
 
 ## Formulário e API
 
-Fluxo: possui plano → qual plano (se possui) → hospital opcional → idades → possui CNPJ → CNPJ opcional (se possui) → contato. Avançar e voltar preserva as respostas em memória, sem recarregar. Nome, telefone com DDD e e-mail são obrigatórios. Não há caixas de autorização de WhatsApp ou ofertas por e-mail. Atualizar a página limpa o formulário.
+Fluxo: possui plano → qual plano (se possui) → hospital obrigatório (digite “não” se não tiver preferência) → idades → possui CNPJ → CNPJ opcional (se possui) → contato. Avançar e voltar preserva as respostas em memória, sem recarregar. Nome, telefone com DDD e e-mail são obrigatórios. Não há caixas de autorização de WhatsApp ou ofertas por e-mail. Atualizar a página limpa o formulário.
 
 O envio continua em `https://api.libertysaude.com.br/api/clientes`, com os campos `nome`, `email`, `telefone`, `cnpj`, `noCnpj`, `hospital`, `plano_atual`, `idades`, `aceitaEmails`, `aceitaWhatsapp` e `versaoPoliticaPrivacidade`.
 

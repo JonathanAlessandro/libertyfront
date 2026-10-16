@@ -127,7 +127,14 @@ test('formulário sem plano, hospital ou CNPJ no celular', async ({ page }) => {
   const next=()=>page.getByRole('button',{name:'Continuar →',exact:true}).click();
   await page.getByRole('button',{name:'Não',exact:true}).click();
   await expect(page.getByLabel('Não tenho preferência de hospital')).toHaveCount(0);
-  await expect(page.getByLabel('Hospital de preferência')).not.toHaveAttribute('required');
+  const hospital = page.getByLabel('Hospital de preferência');
+  await expect(hospital).toHaveAttribute('required');
+  await next();
+  await expect(page.getByRole('alert')).toContainText('Informe um hospital de preferência');
+  await hospital.fill('   ');
+  await next();
+  await expect(page.getByRole('alert')).toContainText('Informe um hospital de preferência');
+  await hospital.fill('não');
   await next();
   await page.getByLabel('Idades dos beneficiários').fill('28');await next();
   await page.getByRole('button',{name:'Não',exact:true}).click();
@@ -136,7 +143,7 @@ test('formulário sem plano, hospital ou CNPJ no celular', async ({ page }) => {
   expect(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth)).toBe(false);
   await page.getByRole('button',{name:'Solicitar minha cotação'}).click();
   await expect(page.getByRole('heading',{name:'Sua solicitação foi enviada!'})).toBeVisible();
-  expect(payload.hospital).toBe('');expect(payload.noCnpj).toBe(true);expect(payload.cnpj).toBeNull();expect(payload.plano_atual).toBe('não possuo plano');
+  expect(payload.hospital).toBe('não');expect(payload.noCnpj).toBe(true);expect(payload.cnpj).toBeNull();expect(payload.plano_atual).toBe('não possuo plano');
 });
 
 test('WhatsApp abre diretamente sem caixa de atendimento e página inexistente retorna 404', async ({ page, request }) => {
@@ -180,6 +187,7 @@ for (const clearIncomplete of [false, true]) {
     await page.goto('/cotacao.html');
     await page.emulateMedia({reducedMotion:'reduce'});
     await page.getByRole('button',{name:'Não',exact:true}).click();
+    await page.getByLabel('Hospital de preferência').fill('não');
     await page.getByRole('button',{name:'Continuar',exact:false}).click();
     await page.getByLabel('Idades dos beneficiários').fill('30');
     await page.getByRole('button',{name:'Continuar',exact:false}).click();
